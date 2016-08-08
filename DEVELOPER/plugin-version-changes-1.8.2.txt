@@ -1,0 +1,1396 @@
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap
+Version number		:		v3.3.4
+filesize			:		66 KB
+License 			: 		https://github.com/twbs/bootstrap/blob/master/LICENSE
+Author or website 	: 		http://getbootstrap.com
+
+--------------------------------------------------------------------------------
+							New VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap
+Version number		:		v3.3.6
+filesize			:		66 KB
+License 			: 		https://github.com/twbs/bootstrap/blob/master/LICENSE
+Author or website 	: 		http://getbootstrap.com
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap Duallistbox
+Version number		:		v3.0.2
+filesize			:		27 KB
+License 			: 		http://www.apache.org/licenses/LICENSE-2.0
+Author			 	: 		István Ujj-Mészáros
+Website 			: 		http://www.virtuosoft.eu/code/bootstrap-duallistbox/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap Duallistbox
+Version number		:		v3.0.5
+filesize			:		28 KB
+License 			: 		http://www.apache.org/licenses/LICENSE-2.0
+Author			 	: 		István Ujj-Mészáros
+Website 			: 		http://www.virtuosoft.eu/code/bootstrap-duallistbox/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-progressbar
+Version number		:		v0.7.1
+filesize			:		6 KB
+License 			: 		http://www.opensource.org/licenses/MIT
+Author			 	: 		@minddust
+Website 			: 		https://www.minddust.com/bootstrap-progressbar
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-progressbar
+Version number		:		v0.9.0
+filesize			:		7 KB
+License 			: 		http://www.opensource.org/licenses/MIT
+Author			 	: 		@minddust
+Website 			: 		https://www.minddust.com/bootstrap-progressbar
+
+********************************************************************************
+
+--------------------------------------------------------------------------------
+							Bootstrap-slider
+--------------------------------------------------------------------------------
+
+
+						no need to update
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-tagsinput-angular
+Version number		:		v0.3.9
+filesize			:		16 KB
+License 			: 		https://raw.githubusercontent.com/TimSchlechter/bootstrap-tagsinput/master/LICENSE
+Author			 	: 		Tim Schlechter
+Website 			: 		http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-tagsinput-angular
+Version number		:		v0.8.0
+filesize			:		23 KB
+License 			: 		https://raw.githubusercontent.com/bootstrap-tagsinput/bootstrap-tagsinput/master/LICENSE
+Author			 	: 		Luckner Jr. Jean-Baptiste
+Website 			: 		http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-tagsinput
+Version number		:		v0.3.9
+filesize			:		16 KB
+License 			: 		https://raw.githubusercontent.com/TimSchlechter/bootstrap-tagsinput/master/LICENSE
+Author			 	: 		Tim Schlechter
+Website 			: 		http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Bootstrap-tagsinput
+Version number		:		v0.8.0
+filesize			:		23 KB
+License 			: 		https://raw.githubusercontent.com/bootstrap-tagsinput/bootstrap-tagsinput/master/LICENSE
+Author			 	: 		Luckner Jr. Jean-Baptiste
+Website 			: 		http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		bootstrap-timepicker
+Version number		:		v0.2.7
+filesize			:		31 KB
+License 			: 		https://github.com/jdewit/bootstrap-timepicker/blob/v0.2.7/LICENSE
+Author			 	: 		Joris de Wit
+Website 			: 		http://jdewit.github.com/bootstrap-timepicker
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		bootstrap-timepicker
+Version number		:		v0.5.2
+filesize			:		34 KB
+License 			: 		https://github.com/jdewit/bootstrap-timepicker/blob/v0.5.2/LICENSE
+Author			 	: 		Joris de Wit
+Website 			: 		http://jdewit.github.com/bootstrap-timepicker
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		twitter-bootstrap-wizard
+Version number		:		v1.0
+filesize			:		9 KB
+License 			: 		https://github.com/VinceG/twitter-bootstrap-wizard/blob/1.1/MIT-LICENSE.txt
+Author			 	: 		Vincent Gabriel & Jason Gill
+Website 			: 		https://vadimg.com/twitter-bootstrap-wizard-example/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		twitter-bootstrap-wizard
+Version number		:		v1.3.2
+filesize			:		12 KB
+License 			: 		https://github.com/VinceG/twitter-bootstrap-wizard/blob/1.3.2/MIT-LICENSE.txt
+Author			 	: 		Vincent Gabriel & Jason Gill
+Website 			: 		https://vadimg.com/twitter-bootstrap-wizard-example/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							bootstrap-tree.js
+--------------------------------------------------------------------------------
+
+						
+							custom plugin
+	
+
+********************************************************************************
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		BootstrapValidator
+Version number		:		v0.5.1
+filesize			:		89 KB
+License 			: 		MIT
+Author			 	: 		@nghuuphuoc
+Website 			: 		http://bootstrapvalidator.com
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+
+------ 				Need to buy this plugin new version
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Select2
+Version number		:		v3.4.5
+filesize			:		144 KB
+License 			: 		http://www.apache.org/licenses/LICENSE-2.0
+Author			 	: 		Igor Vaynberg
+Website 			: 		http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Select2
+Version number		:		v4.0.1
+filesize			:		154 KB
+License 			: 		https://github.com/select2/select2/blob/4.0.1/LICENSE.md
+Author			 	: 		Kevin Brown
+Website 			: 		https://select2.github.io
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Chartjs
+Version number		:		v1.0.2
+filesize			:		108 KB
+License 			: 		https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
+Author			 	: 		Nick Downie
+Website 			: 		http://chartjs.org/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Chartjs
+Version number		:		v2.0.0-beta2
+filesize			:		252 KB
+License 			: 		https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
+Author			 	: 		Nick Downie
+Website 			: 		http://chartjs.org/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							 CK Editor
+--------------------------------------------------------------------------------
+
+
+			 				Folder Empty
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							Clockpicker
+--------------------------------------------------------------------------------
+
+
+------ 				Nothing updated in plugin.
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							bootstrap-colorpicker
+--------------------------------------------------------------------------------
+
+
+------ 				Nothing updated in plugin.
+
+
+********************************************************************************
+
+--------------------------------------------------------------------------------
+							datatables.responsive.js
+--------------------------------------------------------------------------------
+###	this plugin does not contain any versions rather improvements made to a few lines of code found here : 
+
+Ln: 212
+Ln: 352
+Ln: 375
+Ln: 594
+Ln: 604
+Ln: 613
+Ln: 619
+Ln: 631
+Ln: 638
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		DataTables Bootstrap 3 integration
+Version number		:		v1.1.3
+filesize			:		36 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		DataTables Bootstrap 3 integration
+Version number		:		v1.3.1
+filesize			:		35 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		DataTables ColReorder
+Version number		:		v1.1.3
+filesize			:		36 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		DataTables ColReorder
+Version number		:		v1.3.1
+filesize			:		35 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+									colVis
+--------------------------------------------------------------------------------
+
+
+------------------		This extension retired
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+								TableTools, 
+--------------------------------------------------------------------------------
+
+
+------------------		This extension retired
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		jquery.dataTables.js
+Version number		:		v1.10.6
+filesize			:		427 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		jquery.dataTables.js
+Version number		:		v1.10.11
+filesize			:		437 KB
+License 			: 		http://datatables.net/license
+Author			 	: 		SpryMedia Ltd (www.sprymedia.co.uk)
+Website 			: 		http://www.datatables.net
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							delete-table-row.js
+--------------------------------------------------------------------------------
+
+
+							custom plugin
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		dropzone-amd-module.js
+Version number		:		v4.0.1
+filesize			:		61.5 KB
+License 			: 		https://github.com/enyo/dropzone/blob/v4.0.1/LICENSE
+Author			 	: 		Matias Meno
+Website 			: 		http://www.dropzonejs.com
+Description			:		Handles drag and drop of files for you.
+keywords			:		dragndrop, drag and drop, file upload, upload
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		dropzone-amd-module.js
+Version number		:		v4.3.0
+filesize			:		63 KB
+License 			: 		https://github.com/enyo/dropzone/blob/v4.3.0/LICENSE
+Author			 	: 		Matias Meno
+Website 			: 		http://www.dropzonejs.com
+Description			:		Handles drag and drop of files for you.
+keywords			:		dragndrop, drag and drop, file upload, upload
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Dropzone
+Version number		:		v4.0.1
+filesize			:		61.5 KB
+License 			: 		https://github.com/enyo/dropzone/blob/v4.0.1/LICENSE
+Author			 	: 		Matias Meno
+Website 			: 		http://www.dropzonejs.com
+Description			:		Handles drag and drop of files for you.
+keywords			:		dragndrop, drag and drop, file upload, upload
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Dropzone
+Version number		:		v4.3.0
+filesize			:		63 KB
+License 			: 		https://github.com/enyo/dropzone/blob/v4.3.0/LICENSE
+Author			 	: 		Matias Meno
+Website 			: 		http://www.dropzonejs.com
+Description			:		Handles drag and drop of files for you.
+keywords			:		dragndrop, drag and drop, file upload, upload
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Dygraph
+Version number		:		v1.0.1
+filesize			:		133 KB
+License 			: 		https://github.com/danvk/dygraphs/blob/master/LICENSE.txt
+Author			 	: 		Dan Vanderkam (danvdk@gmail.com)
+Website 			: 		http://dygraphs.com/
+Description			:		dygraphs is a fast, flexible open source JavaScript charting library.
+keywords			:		dygraphs,javascript,visualization,canvas,chart,timeseries
+							
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		Dygraph
+Version number		:		v1.1.1
+filesize			:		401 KB
+License 			: 		https://github.com/danvk/dygraphs/blob/master/LICENSE.txt
+Author			 	: 		Dan Vanderkam (danvdk@gmail.com)
+Website 			: 		http://dygraphs.com/
+Description			:		dygraphs is a fast, flexible open source JavaScript charting library.
+keywords			:		dygraphs,javascript,visualization,canvas,chart,timeseries
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		easyPieChart
+Version number		:		v2.1.6
+filesize			:		9 KB
+License 			: 		https://github.com/rendro/easy-pie-chart/blob/master/LICENSE
+Author			 	: 		Robert Fleischmann <rendro87@gmail.com>
+Website 			: 		http://rendro.github.io/easy-pie-chart
+Description			:		Lightweight plugin to render simple, animated and retina optimized pie charts
+keywords			:		pie chart,chart,circular progress,precent,progress bar,
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		easyPieChart
+Version number		:		v2.1.7
+filesize			:		10 KB
+License 			: 		https://github.com/rendro/easy-pie-chart/blob/master/LICENSE
+Author			 	: 		Robert Fleischmann <rendro87@gmail.com>
+Website 			: 		http://rendro.github.io/easy-pie-chart
+Description			:		Lightweight plugin to render simple, animated and retina optimized pie charts
+keywords			:		pie chart,chart,circular progress,precent,progress bar,
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		FastClick
+Version number		:		v0.6.7
+filesize			:		8 KB
+License 			: 		http://ftlabs.github.io/fastclick/
+Author			 	: 		Rowan Beentje <rowan.beentje@ft.com>
+Website 			: 		http://rendro.github.io/easy-pie-chart
+Description			:		Polyfill to remove click delays on browsers with touch UIs.
+keywords			:		fastclick, mobile, touch, tap, click, delay
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+Plugin name 		:		FastClick
+Version number		:		v1.0.6
+filesize			:		27 KB
+License 			: 		http://ftlabs.github.io/fastclick/
+Author			 	: 		Rowan Beentje <rowan.beentje@ft.com>
+Website 			: 		http://rendro.github.io/easy-pie-chart
+Description			:		Polyfill to remove click delays on browsers with touch UIs.
+keywords			:		fastclick, mobile, touch, tap, click, delay
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							Float 0.8.3
+--------------------------------------------------------------------------------
+
+
+					No need to update yet
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Fuel UX Wizard
+Version number		:		unknown
+filesize			:		7 KB
+License 			: 		https://github.com/ExactTarget/fuelux/blob/master/LICENSE
+Author			 	: 		ExactTarget <kparkerson@exacttarget.com>
+Website 			: 		https://github.com/ExactTarget/fuelux
+Description			:		Base Fuel UX styles and controls
+keywords			:		application, bootstrap, controls, css, exacttarget, exact target, front-end, fuelux, fuel ux, js, salesforce, user interface, web
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Fuel UX Wizard
+Version number		:		v3.14.1
+filesize			:		14 KB
+License 			: 		https://github.com/ExactTarget/fuelux/blob/master/LICENSE
+Author			 	: 		ExactTarget <kparkerson@exacttarget.com>
+Website 			: 		https://github.com/ExactTarget/fuelux
+Description			:		Base Fuel UX styles and controls
+keywords			:		application, bootstrap, controls, css, exacttarget, exact target, front-end, fuelux, fuel ux, js, salesforce, user interface, web
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		FullCalendar
+Version number		:		v2.0.2
+filesize			:		175 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Adam Shaw <arshaw@arshaw.com>
+Website 			: 		http://fullcalendar.io/
+Description			:		Full-sized drag & drop event calendar
+keywords			:		calendar, event, full-sized, jquery-plugin
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		FullCalendar
+Version number		:		v2.6.1
+filesize			:		331 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Adam Shaw <arshaw@arshaw.com>
+Website 			: 		http://fullcalendar.io/
+Description			:		Full-sized drag & drop event calendar
+keywords			:		calendar, event, full-sized, jquery-plugin
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							ie-placeholder
+--------------------------------------------------------------------------------
+
+
+
+							empty folder
+
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		ion-rangeslider
+Version number		:		v1.9.3
+filesize			:		47 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Denis Ineshin <ionden.tech@gmail.com>
+Website 			: 		http://ionden.com/a/plugins/ion.rangeSlider/en.html
+Description			:		Cool, comfortable and easily customizable range slider with many options and skin support
+keywords			:		jquery-plugin, ecosystem:jquery, jquery, form, input, range, slider, rangeslider, interface, diapason, ui, noui, skins
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		ion-rangeslider
+Version number		:		v2.1.2
+filesize			:		79 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Denis Ineshin <ionden.tech@gmail.com>
+Website 			: 		http://ionden.com/a/plugins/ion.rangeSlider/en.html
+Description			:		Cool, comfortable and easily customizable range slider with many options and skin support
+keywords			:		jquery-plugin, ecosystem:jquery, jquery, form, input, range, slider, rangeslider, interface, diapason, ui, noui, skins
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							jQuery Color Animations
+--------------------------------------------------------------------------------
+
+							No found any update
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Jcrop
+Version number		:		v0.9.12
+filesize			:		42 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Tapmodo <khallman@tapmodo.com>
+Website 			: 		https://github.com/tapmodo/Jcrop
+Description			:		Image cropping plugin for jQuery
+keywords			:		img, image, form, crop, cropping, cropper
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Jcrop
+Version number		:		v2.0.4
+filesize			:		74 KB
+License 			: 		https://github.com/fullcalendar/fullcalendar/blob/master/LICENSE.txt
+Author			 	: 		Tapmodo <khallman@tapmodo.com>
+Website 			: 		https://github.com/tapmodo/Jcrop
+Description			:		Image cropping plugin for jQuery
+keywords			:		img, image, form, crop, cropping, cropper
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Grid
+Version number		:		v4.5.4
+filesize			:		263 KB
+License 			: 		http://www.gnu.org/licenses/gpl-2.0.html
+Author			 	: 		Tony Tomov <tony@trirand.com>
+Website 			: 		https://github.com/jsdelivr/jsdelivr/tree/master/files/jqgrid/4.6.0
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Grid
+Version number		:		v4.6.0
+filesize			:		450 KB
+License 			: 		http://www.gnu.org/licenses/gpl-2.0.html
+Author			 	: 		Tony Tomov <tony@trirand.com>
+Website 			: 		https://github.com/jsdelivr/jsdelivr/tree/master/files/jqgrid/4.6.0
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Form Plugin
+Version number		:		v20130711
+filesize			:		15 KB
+License 			: 		http://malsup.github.com/mit-license.txt
+Author			 	: 		M. Alsup
+Website 			: 		http://malsup.com/jquery/form/
+Description			:		A simple way to AJAX-ify any form on your page; with file upload and progress support.
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Form Plugin
+Version number		:		v3.51.0
+filesize			:		45 KB
+License 			: 		http://malsup.github.com/mit-license.txt
+Author			 	: 		M. Alsup
+Website 			: 		http://malsup.com/jquery/form/
+Description			:		A simple way to AJAX-ify any form on your page; with file upload and progress support.
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Nestable jQuery
+Version number		:		unknown
+filesize			:		18 KB
+License 			: 		Dual-licensed under the BSD or MIT licenses
+Author			 	: 		David Bushell
+Website 			: 		http://dbushell.com/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Nestable jQuery
+Version number		:		Latest commit 4f93032 on Aug 26, 2014
+filesize			:		18 KB
+License 			: 		Dual-licensed under the BSD or MIT licenses
+Author			 	: 		David Bushell
+Website 			: 		http://dbushell.com/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery UI Touch Punch
+Version number		:		v0.2.2
+filesize			:		5 KB
+License 			: 		Dual licensed under the MIT or GPL Version 2 licenses.
+Author			 	: 		Dave Furfero
+Website 			: 		http://touchpunch.furf.com/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery UI Touch Punch
+Version number		:		v0.2.3
+filesize			:		5 KB
+License 			: 		Dual licensed under the MIT or GPL Version 2 licenses.
+Author			 	: 		Dave Furfero
+Website 			: 		http://touchpunch.furf.com/
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Validation Plugin
+Version number		:		v1.11.0
+filesize			:		45 KB
+License 			: 		http://www.opensource.org/licenses/MIT
+Author			 	: 		Jörn Zaefferer <joern.zaefferer@gmail.com>
+Website 			: 		http://jqueryvalidation.org/
+Description			:		Client-side form validation made easy
+keywords			:		jquery, jquery-plugin, forms, validation, validate
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Validation Plugin
+Version number		:		v1.14.1
+filesize			:		55 KB
+License 			: 		http://www.opensource.org/licenses/MIT
+Author			 	: 		Jörn Zaefferer <joern.zaefferer@gmail.com>
+Website 			: 		http://jqueryvalidation.org/
+Description			:		Client-side form validation made easy
+keywords			:		jquery, jquery-plugin, forms, validation, validate
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Migrate
+Version number		:		v1.2.1
+filesize			:		17 KB
+License 			: 		https://github.com/jquery/jquery-migrate/blob/1.2.1/LICENSE.txt
+Author			 	: 		https://github.com/jquery/jquery-migrate/blob/1.3.0/AUTHORS.txt
+Website 			: 		https://github.com/jquery/jquery-migrate
+Description			:		Migrate older jQuery code to jQuery 1.9+
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Migrate
+Version number		:		v1.3.0
+filesize			:		22 KB
+License 			: 		https://github.com/jquery/jquery-migrate/blob/1.3.0/LICENSE.txt
+Author			 	: 		https://github.com/jquery/jquery-migrate/blob/1.3.0/AUTHORS.txt
+Website 			: 		https://github.com/jquery/jquery-migrate
+Description			:		Migrate older jQuery code to jQuery 1.9+
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Knob
+Version number		:		v1.2.0
+filesize			:		24 KB
+License 			: 		https://github.com/aterrien/jQuery-Knob/blob/master/LICENSE
+Author			 	: 		Anthony Terrien
+Website 			: 		https://github.com/aterrien/jQuery-Knob#readme
+Description			:		Nice, downward compatible, touchable, jQuery dial
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Knob
+Version number		:		v1.2.12
+filesize			:		26 KB
+License 			: 		https://github.com/aterrien/jQuery-Knob/blob/master/LICENSE
+Author			 	: 		Anthony Terrien
+Website 			: 		https://github.com/aterrien/jQuery-Knob#readme
+Description			:		Nice, downward compatible, touchable, jQuery dial
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-markdown
+Version number		:		v2.9.0
+filesize			:		42 KB
+License 			: 		http://www.apache.org/licenses/LICENSE-2.0
+Author			 	: 		Taufan Aditya
+Website 			: 		https://github.com/toopay/bootstrap-markdown
+Description			:		A bootstrap plugin for markdown editing
+keywords			:		twitter, bootstrap, markdown, editor
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-markdown
+Version number		:		v2.10.0
+filesize			:		43 KB
+License 			: 		http://www.apache.org/licenses/LICENSE-2.0
+Author			 	: 		Taufan Aditya
+Website 			: 		https://github.com/toopay/bootstrap-markdown
+Description			:		A bootstrap plugin for markdown editing
+keywords			:		twitter, bootstrap, markdown, editor
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		markdownjs
+Version number		:		unknown
+filesize			:		47 KB
+License 			: 		Released under MIT license
+Author			 	: 		Dominic Baggott <dominic.baggott@gmail.com>
+Website 			: 		https://github.com/evilstreak/markdown-js
+Description			:		A sensible Markdown parser for javascript
+keywords			:		markdown, text processing, ast
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		markdownjs
+Version number		:		v0.6.0-beta1
+filesize			:		50 KB
+License 			: 		Released under MIT license
+Author			 	: 		Dominic Baggott <dominic.baggott@gmail.com>
+Website 			: 		https://github.com/evilstreak/markdown-js
+Description			:		A sensible Markdown parser for javascript
+keywords			:		markdown, text processing, ast
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		to-markdown
+Version number		:		unknown
+filesize			:		6 KB
+License 			: 		https://github.com/domchristie/to-markdown/blob/v1.3.0/LICENSE
+Author			 	: 		Dom Christie
+Website 			: 		http://domchristie.github.com/to-markdown/
+Description			:		HTML-to-Markdown converter
+keywords			:		markdown
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		to-markdown
+Version number		:		v1.3.0
+filesize			:		20 KB
+License 			: 		https://github.com/domchristie/to-markdown/blob/v1.3.0/LICENSE
+Author			 	: 		Dom Christie
+Website 			: 		http://domchristie.github.com/to-markdown/
+Description			:		HTML-to-Markdown converter
+keywords			:		markdown
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Masked Input Plugin
+Version number		:		v1.3.1
+filesize			:		6 KB
+License 			: 		http://digitalbush.com/projects/masked-input-plugin/#license
+Author			 	: 		Josh Bush
+Website 			: 		http://domchristie.github.com/to-markdown/
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jQuery Masked Input Plugin
+Version number		:		v1.4.1
+filesize			:		20 KB
+License 			: 		http://digitalbush.com/projects/masked-input-plugin/#license
+Author			 	: 		Josh Bush
+Website 			: 		http://domchristie.github.com/to-markdown/
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-maxlength
+Version number		:		v1.4.2
+filesize			:		14 KB
+License 			: 		https://github.com/mimo84/bootstrap-maxlength/blob/master/LICENSE
+Author			 	: 		Maurizio Napoleoni @mimonap
+Website 			: 		http://mimo84.github.io/bootstrap-maxlength/
+Description			:		An visual feedback indicator for the MaxLength attribute
+keywords			:		form, maxlength, html5, input, feedback, jquery-plugin, jquery
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-maxlength
+Version number		:		v1.7.0
+filesize			:		18 KB
+License 			: 		https://github.com/mimo84/bootstrap-maxlength/blob/master/LICENSE
+Author			 	: 		Maurizio Napoleoni @mimonap
+Website 			: 		http://mimo84.github.io/bootstrap-maxlength/
+Description			:		An visual feedback indicator for the MaxLength attribute
+keywords			:		form, maxlength, html5, input, feedback, jquery-plugin, jquery
+
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		moment.js
+Version number		:		v2.10.2
+filesize			:		99 KB
+License 			: 		MIT
+Author			 	: 		Iskren Ivov Chernev <iskren.chernev@gmail.com>
+Website 			: 		http://momentjs.com
+Description			:		Parse, validate, manipulate, and display dates
+keywords			:		moment, date, time, parse, format, validate, i18n, l10n, ender
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		moment.js
+Version number		:		v2.11.2
+filesize			:		117 KB
+License 			: 		MIT
+Author			 	: 		Iskren Ivov Chernev <iskren.chernev@gmail.com>
+Website 			: 		http://momentjs.com
+Description			:		Parse, validate, manipulate, and display dates
+keywords			:		moment, date, time, parse, format, validate, i18n, l10n, ender
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		morris.js
+Version number		:		v0.4.1
+filesize			:		54 KB
+License 			: 		BSD-2-Clause
+Author			 	: 		Olly Smith <olly@oesmith.co.uk>
+Website 			: 		http://morrisjs.github.io/morris.js/
+Description			:		Easy, pretty charts
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		morris.js
+Version number		:		v0.5.1
+filesize			:		67 KB
+License 			: 		BSD-2-Clause
+Author			 	: 		Olly Smith <olly@oesmith.co.uk>
+Website 			: 		http://morrisjs.github.io/morris.js/
+Description			:		Easy, pretty charts
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		raphael
+Version number		:		v2.1.2
+filesize			:		293 KB
+License 			: 		MIT
+Author			 	: 		Dmitry Baranovskiy
+Website 			: 		http://dmitrybaranovskiy.github.io/raphael/
+Description			:		JavaScript Vector Library
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		raphael
+Version number		:		v2.1.4
+filesize			:		298 KB
+License 			: 		MIT
+Author			 	: 		Dmitry Baranovskiy
+Website 			: 		http://dmitrybaranovskiy.github.io/raphael/
+Description			:		JavaScript Vector Library
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.mb.browser.js
+Version number		:		unknown
+filesize			:		4 KB
+License 			: 		https://github.com/pupunzi/jquery.mb.menu/blob/master/licenses/MIT-LICENSE.txt
+Author			 	: 		Matteo Bicocchi <matteo@open-lab.com>
+Website 			: 		https://github.com/pupunzi/jquery.mb.browser
+Description			:		It replace the browser object removed from jQuery 1.8 >
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.mb.browser.js
+Version number		:		v1.0.0
+filesize			:		6 KB
+License 			: 		https://github.com/pupunzi/jquery.mb.menu/blob/master/licenses/MIT-LICENSE.txt
+Author			 	: 		Matteo Bicocchi <matteo@open-lab.com>
+Website 			: 		https://github.com/pupunzi/jquery.mb.browser
+Description			:		It replace the browser object removed from jQuery 1.8 >
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-multiselect.js
+Version number		:		unknown
+filesize			:		53 KB
+License 			: 		https://github.com/pupunzi/jquery.mb.menu/blob/master/licenses/MIT-LICENSE.txt
+Author			 	: 		David Stutz
+Website 			: 		http://davidstutz.github.io/bootstrap-multiselect/
+Description			:		Twitter Bootstrap plugin to make selects user friendly.
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		bootstrap-multiselect.js
+Version number		:		v0.9.13
+filesize			:		54 KB
+License 			: 		https://github.com/pupunzi/jquery.mb.menu/blob/master/licenses/MIT-LICENSE.txt
+Author			 	: 		David Stutz
+Website 			: 		http://davidstutz.github.io/bootstrap-multiselect/
+Description			:		Twitter Bootstrap plugin to make selects user friendly.
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.nouislider.js
+Version number		:		unknown
+filesize			:		26 KB
+License 			: 		http://www.wtfpl.net/about/
+Author			 	: 		Leon Gersen
+Website 			: 		http://refreshless.com/nouislider/
+Description			:		A lightweight, highly customizable range slider without bloat. Touch support on all modern devices and responsive design ready!
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.nouislider.js
+Version number		:		v8.3.0
+filesize			:		50 KB
+License 			: 		http://www.wtfpl.net/about/
+Author			 	: 		Leon Gersen
+Website 			: 		http://refreshless.com/nouislider/
+Description			:		A lightweight, highly customizable range slider without bloat. Touch support on all modern devices and responsive design ready!
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		PaceJs
+Version number		:		v0.5.6
+filesize			:		13 KB
+License 			: 		https://github.com/HubSpot/pace/blob/master/LICENSE
+Author			 	: 		Zack Bloom <zackbloom@gmail.com>
+Website 			: 		https://github.com/HubSpot/pace
+Description			:		Automatic page load progress bar
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		PaceJs
+Version number		:		v1.0.2
+filesize			:		28 KB
+License 			: 		https://github.com/HubSpot/pace/blob/master/LICENSE
+Author			 	: 		Zack Bloom <zackbloom@gmail.com>
+Website 			: 		https://github.com/HubSpot/pace
+Description			:		Automatic page load progress bar
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Select2
+Version number		:		v3.5.1
+filesize			:		144 KB
+License 			: 		https://github.com/select2/select2/blob/master/LICENSE.md
+Author			 	: 		Kevin Brown
+Website 			: 		https://select2.github.io
+Description			:		Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		Select2
+Version number		:		v4.0.1
+filesize			:		154 KB
+License 			: 		https://github.com/select2/select2/blob/master/LICENSE.md
+Author			 	: 		Kevin Brown
+Website 			: 		https://select2.github.io
+Description			:		Select2 is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							selectToUISlider.jQuery.js
+--------------------------------------------------------------------------------
+	
+						No Need to update
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.slimscroll.js
+Version number		:		v1.3.0
+filesize			:		14 KB
+License 			: 		http://www.opensource.org/licenses/mit-license.php
+Author			 	: 		Piotr Rochala
+Website 			: 		http://rocha.la/jQuery-slimScroll/
+Description			:		slimScroll is a small jQuery plugin that transforms any div into a scrollable area. slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over.
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		jquery.slimscroll.js
+Version number		:		v1.3.8
+filesize			:		14 KB
+License 			: 		http://www.opensource.org/licenses/mit-license.php
+Author			 	: 		Piotr Rochala
+Website 			: 		http://rocha.la/jQuery-slimScroll/
+Description			:		slimScroll is a small jQuery plugin that transforms any div into a scrollable area. slimScroll doesn't occupy any visual space as it only appears on a user initiated mouse-over.
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							jquery.sparkline.js
+--------------------------------------------------------------------------------
+	
+						No Need to update
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		summernote.js
+Version number		:		v0.6.4
+filesize			:		193 KB
+License 			: 		summernote may be freely distributed under the MIT license.
+Author			 	: 		hackerwins <susukang98@gmail.com>
+Website 			: 		http://summernote.org/
+Description			:		Super simple WYSIWYG editor
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		summernote.js
+Version number		:		v1.3.8
+filesize			:		196 KB
+License 			: 		summernote may be freely distributed under the MIT license.
+Author			 	: 		hackerwins <susukang98@gmail.com>
+Website 			: 		http://summernote.org/
+Description			:		Super simple WYSIWYG editor
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							Supper box
+--------------------------------------------------------------------------------
+
+			
+						No need to update
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							throttle-denounce
+--------------------------------------------------------------------------------
+
+			
+						empty folder
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							OLD VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		typeahead.js
+Version number		:		v0.9.3
+filesize			:		48 KB
+License 			: 		summernote may be freely distributed under the MIT license.
+Author			 	: 		Twitter, Inc.
+Website 			: 		http://twitter.github.com/typeahead.js/
+Description			:		fast and fully-featured autocomplete library
+
+--------------------------------------------------------------------------------
+							NEW VERSION DETAILS
+--------------------------------------------------------------------------------
+
+Plugin name 		:		typeahead.js
+Version number		:		v0.11.1
+filesize			:		62 KB
+License 			: 		summernote may be freely distributed under the MIT license.
+Author			 	: 		Twitter, Inc.
+Website 			: 		http://twitter.github.com/typeahead.js/
+Description			:		fast and fully-featured autocomplete library
+
+********************************************************************************
+
+
+--------------------------------------------------------------------------------
+							vectormap
+--------------------------------------------------------------------------------
+
+			
+						empty folder
+
+
+********************************************************************************
+
+
+
+--------------------------------------------------------------------------------
+							x-editable
+--------------------------------------------------------------------------------
+
+			
+						No need to update
+
+
+********************************************************************************

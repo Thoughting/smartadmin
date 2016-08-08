@@ -1,0 +1,601 @@
+1.	applayout.html
+	
+	No changes required!
+______________________
+
+2.	_blank.html
+	
+	No changes required!
+______________________
+
+3.	blog.html
+	
+	No changes required!
+______________________
+
+4.	bootstrap-forms.html
+	
+	No changes required!
+______________________
+
+5.	bootstrap-validator.html
+	
+	No changes required!
+______________________
+
+6.	buttons.html
+	
+	No changes required!
+______________________
+
+7.	calendar.html
+
+-----> 7 differences: 10 lines, 10 inline differences in 6 changed lines <------
+
+	
+Diff 1: Delete 4 lines (1289 - 1292, in old_version) after line 1288 (in new_version)
+#
+#		buttonText: {
+#		    prev: '<i class="fa fa-chevron-left"></i>',
+#		    next: '<i class="fa fa-chevron-right"></i>'
+#		},
+#
+Diff 2: Change 1 line (1387, in old_version) to 1 line (1382, in new_version)
+#
+#	from 	-> element.find('.fc-event-title').append("<br/><span class='ultra-light'>" + event.description +
+#	to 		-> element.find('.fc-title').append("<br/><span class='ultra-light'>" + event.description +
+#
+Diff 3: Change 1 line (1391, in old_version) to 1 line (1386, in new_version)
+#
+#	from 	-> element.find('.fc-event-title').append("<i class='air air-top-right fa " + event.icon +
+#	to 		-> element.find('.fc-title').append("<i class='air air-top-right fa " + event.icon +
+#
+Diff 4: Change 1 line (1402, in old_version) to 1 line (1397, in new_version)
+#
+#	from 	-> $('.fc-header-right, .fc-header-center').hide();
+#	to 		-> $('.fc-right, .fc-center').hide();
+#
+Diff 5: Change 1 line (1406, in old_version) to 1 line (1401, in new_version)
+#
+#	from 	-> $('.fc-button-prev').click();
+#	to 		-> $('.fc-prev-button').click();
+#
+Diff 6: Change 1 line (1411, in old_version) to 1 line (1406, in new_version)
+#
+#	from 	-> $('.fc-button-next').click();
+#	to 		-> $('.fc-next-button').click();
+#
+Diff 7: Change 1 line (1416, in old_version) to 1 line (1411, in new_version)
+#
+#	from 	-> $('.fc-button-today').click();
+#	to 		-> $('.fc-today-button').click();
+#
+_________________________________________________________________________________
+
+8.	charjs.html
+
+Diff 1: Add 1 line (1327, in new_version) after line 1328 (in old_version)	
+# <script src="js/plugin/moment/moment.min.js"></script>
+
+Diff2: Replace lines 1388 - 1655 (in new_version)  in in old_version Lines (1390 - 1754)
+
+_________________________________________________________________________________
+
+9.	chat.html
+	
+	No changes required!
+______________________
+
+10.	ckeditor.html
+	
+	No changes required!
+______________________
+
+11.	datatables.html
+	
+	No changes required!
+______________________
+
+12.	difver.html
+	
+	No changes required!
+______________________
+
+13.	dropzone.html
+	
+	No changes required!
+______________________
+
+14.	dygraphs.html
+	
+	No changes required!
+______________________
+
+15.	email-template.html
+	
+	No changes required!
+______________________
+
+16.	error404.html
+	
+	No changes required!
+______________________
+
+17.	error500.html
+	
+	No changes required!
+______________________
+
+18.	fa.html
+	
+	No changes required!
+______________________
+
+19.	flags.html
+	
+	No changes required!
+______________________
+
+20.	flot.html
+	
+	No changes required!
+______________________
+
+21.	forgetpassword.html
+	
+	No changes required!
+______________________
+
+22.	form-elements.html
+	
+	No changes required!
+______________________
+
+23.	form-templates.html
+	
+	No changes required!
+______________________
+
+24.	forum-post.html
+	
+	No changes required!
+______________________
+
+25.	forum-topic.html
+	
+	No changes required!
+______________________
+
+26.	forum.html
+	
+	No changes required!
+______________________
+
+27.	gallery.html
+	
+	No changes required!
+______________________
+
+28.	general-elements.html
+	
+Diff 1: Change 1 line (954, in old_version) to 1 line (954, in new_version)
+#
+#	from 	-> aria-valuetransitiongoal="25"
+#	to 		-> data-transitiongoal="25"
+#
+Diff 2: Change 1 line (972, in old_version) to 1 line (972, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal"  data-transitiongoal="25"></div>
+#
+Diff 3: Change 1 line (977, in old_version) to 1 line (977, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 4: Change 1 line (982, in old_version) to 1 line (982, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 5: Change 1 line (987, in old_version) to 1 line (987, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+Diff 6: Change 1 line (1002, in old_version) to 1 line (1002, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal" data-transitiongoal="25"></div>
+#
+Diff 7: Change 1 line (1007, in old_version) to 1 line (1007, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 8: Change 1 line (1012, in old_version) to 1 line (1012, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 9: Change 1 line (1017, in old_version) to 1 line (1017, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+Diff 10: Change 1 line (1050, in old_version) to 1 line (1050, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal" data-transitiongoal="25"></div>
+#
+Diff 11: Change 1 line (1055, in old_version) to 1 line (1055, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 12: Change 1 line (1060, in old_version) to 1 line (1060, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 13: Change 1 line (1065, in old_version) to 1 line (1065, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+Diff 14: Change 1 line (1085, in old_version) to 1 line (1085, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal" data-transitiongoal="25"></div>
+#
+Diff 15: Change 1 line (1090, in old_version) to 1 line (1090, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 16: Change 1 line (1095, in old_version) to 1 line (1095, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 17: Change 1 line (1100, in old_version) to 1 line (1100, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+Diff 18: Change 1 line (1120, in old_version) to 1 line (1120, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal" data-transitiongoal="25"></div>
+#
+Diff 19: Change 1 line (1125, in old_version) to 1 line (1125, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 20: Change 1 line (1130, in old_version) to 1 line (1130, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 21: Change 1 line (1135, in old_version) to 1 line (1135, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+Diff 22: Change 1 line (1156, in old_version) to 1 line (1156, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-teal" aria-valuetransitiongoal="25"></div>
+#	to 		-> <div class="progress-bar bg-color-teal" data-transitiongoal="25"></div>
+#
+Diff 23: Change 1 line (1161, in old_version) to 1 line (1161, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blueLight" aria-valuetransitiongoal="50"></div>
+#	to 		-> <div class="progress-bar bg-color-blueLight" data-transitiongoal="50"></div>
+#
+Diff 24: Change 1 line (1166, in old_version) to 1 line (1166, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-blue" aria-valuetransitiongoal="75"></div>
+#	to 		-> <div class="progress-bar bg-color-blue" data-transitiongoal="75"></div>
+#
+Diff 25: Change 1 line (1171, in old_version) to 1 line (1171, in new_version)
+#
+#	from 	-> <div class="progress-bar bg-color-redLight" aria-valuetransitiongoal="100"></div>
+#	to 		-> <div class="progress-bar bg-color-redLight" data-transitiongoal="100"></div>
+#
+__________________________________________________________________________________________________
+
+29.	glyph.html
+	
+	No changes required!
+______________________
+
+30.	gmap-xml.html
+	
+	No changes required!
+______________________
+
+31.	grid.html
+	
+	No changes required!
+______________________
+
+32.	image-editor.html
+	
+Diff 1: Change 1 line (940, in old_version) to 1 line (940, in new_version)
+#
+#	from 	-> <div class="tab-pane fade active in" id="s1">
+#	to 		-> <div class="tab-pane fade clearfix active in" id="s1">
+#
+Diff 2: Change 1 line (956, in old_version) to 1 line (956, in new_version)
+#
+#	from 	-> <div class="pull-left padding-gutter padding-top-0 padding-bottom-0">
+#	to 		-> <div class="pull-left padding-gutter padding-top-0 padding-bottom-0 jcrop-api-tabs-options">
+#
+Diff 3: Change 1 line (1023, in old_version) to 1 line (1023, in new_version)
+#
+#	from 	-> <fieldset class="requiresjcrop">
+#	to 		-> <fieldset class="requiresjcrop changeImages">
+#
+Diff 4: Change 1 line (1046, in old_version) to 1 line (1046, in new_version)
+#
+#	from 	-> <div class="tab-pane fade" id="s2">
+#	to 		-> <div class="tab-pane clearfix fade" id="s2">
+#
+Diff 5: Change 1 line (1063, in old_version) to 1 line (1063, in new_version)
+#
+#	from 	-> <div class="tab-pane fade" id="s3">
+#	to 		-> <div class="tab-pane clearfix fade" id="s3">
+#
+Diff 6: Change 1 line (1109, in old_version) to 1 line (1109, in new_version)
+#
+#	from 	-> <div class="tab-pane fade" id="s4">
+#	to 		-> <div class="tab-pane clearfix fade" id="s4">
+#
+Diff 7-8: Delete 4 lines (1124 - 1127, in old_version) after line 1122 (in new_version)
+#
+#	where 	-> <div id="preview-pane">
+#                <div class="preview-container">
+#                	<img src="img/superbox/superbox-full-9.jpg" class="jcrop-preview" id="target-3a" alt="Preview" />
+#                </div>
+#            </div>
+#
+Diff 9: Change 1 line (1134, in old_version) to 1 line (1128, in new_version)
+#
+#	from 	-> <div class="tab-pane fade" id="s5">
+#	to 		-> <div class="tab-pane clearfix fade" id="s5">
+#
+Diff 10-11-12: Change 1 line (1155-1159, in old_version) to 2 lines (1148 - 1155, in new_version)
+#
+# 	from 	-> <label class="checkbox">
+# 	to 		-> <label>
+#
+#	and add <p> as parent of label for margin.
+#
+Diff 13: Change 1 line (1173, in old_version) to 1 line (1170, in new_version)
+#
+#	from 	-> <div class="tab-pane fade padding-10 no-padding-bottom" id="s6">
+#	to 		-> <div class="tab-pane fade clearfix padding-10 no-padding-bottom" id="s6">
+#
+Diff 14: remove all the code about image editor and insert the new code from the new version.
+#
+#	// api_handler
+#
+__________________________________________________________________________________
+
+33.	inbox.html
+	
+	No changes required!
+______________________
+
+34.	index.html
+	
+Diff 1: Add 1 line (286, in new_version) after line 285 (in old_version)
+#
+#	height: "auto",
+#
+Diff 1: Add 1 line (286, in new_version) after line 285 (in old_version)
+#
+#	from 	-> element.find('.fc-event-title').append("<br/><span class='ultra-light'>" + event.description + "</span>");
+#	to 		-> element.find('.fc-title').append("<br/><span class='ultra-light'>" + event.description + "</span>");
+#
+Diff 3: Change 1 line (362, in old_version) to 1 line (364, in new_version)
+#
+#	from 	-> element.find('.fc-event-title').append("<i class='air air-top-right fa " + event.icon + " '></i>");
+#	to 		-> element.find('.fc-title').append("<i class='air air-top-right fa " + event.icon + " '></i>");
+#
+Diff 4: Change 1 line (370, in old_version) to 1 line (372, in new_version)
+#
+#	from 	-> $('.fc-header-right, .fc-header-center').hide();
+#	to 		-> $('.fc-toolbar .fc-right, .fc-toolbar .fc-center').hide();
+#
+Diff 5: Change 1 line (374, in old_version) to 1 line (376, in new_version)
+#
+#	from 	-> $('.fc-button-prev').click();
+#	to 		-> $('.fc-prev-button').click();
+#
+Diff 6: Change 1 line (380, in old_version) to 1 line (382, in new_version)
+#
+#	from 	-> $('.fc-button-next').click();
+#	to 		-> $('.fc-next-button').click();
+#
+____________________________________________________________________________________________
+
+35.	index_ie8_prototype.html
+	
+	No changes required!
+______________________
+
+36.	inline-charts.html
+	
+	No changes required!
+______________________
+
+37.	invoice.html
+	
+	No changes required!
+______________________
+
+38.	jqgrid.html
+	
+	No changes required!
+______________________
+
+39.	jqui.html
+	
+	No changes required!
+______________________
+
+40.	lock.html
+	
+	No changes required!
+______________________
+
+41.	login.html
+	
+	No changes required!
+______________________
+
+42.	morris.html
+	
+	No changes required!
+______________________
+
+43.	nestable-list.html
+	
+	No changes required!
+______________________
+
+44.	nestable-list.html
+	
+	No changes required!
+______________________
+
+45.	other-editors.html
+
+Diff 1: Change 3 lines (1408 - 1410, in old_version) to 13 lines (1408 - 1420, in new_version)	
+
+	Change summernote settings
+
+
+	change ->
+
+	$('.summernote').summernote({
+        height : 180,
+        focus : false,
+        tabsize : 2
+    });
+
+
+    to ->
+
+    $('.summernote').summernote({
+        height: 200,
+        toolbar: [
+        ['style', ['style']],
+        ['font', ['bold', 'italic', 'underline', 'clear']],
+        ['fontname', ['fontname']],
+        ['color', ['color']],
+        ['para', ['ul', 'ol', 'paragraph']],
+        ['height', ['height']],
+        ['table', ['table']],
+        ['insert', ['link', 'picture', 'hr']],
+        ['view', ['fullscreen', 'codeview', 'help']]
+
+      ]
+    });
+
+________________________________________________________________________________________
+
+46.	plugins.html
+	
+1: -> change in line 1051 
+#
+#	from: -> <input id="range-slider-2" type="text" name="range_2" value="1000;100000" data-type="double" data-step="500" data-postfix=" €" data-from="30000" data-to="90000" data-hasgrid="true">
+#	to: -> <input id="range-slider-2" type="text" name="range_2">
+#
+
+
+2: ->
+
+/*
+* JS SLIDER
+*/
+
+# noUiSlider settings replace (line 2253 to 2313 in new_version) with (line 2253 to 2288 in old_version)
+
+NOTE: For the AJAX version rename the callback function from "noUiSlider" to "RunNoUiSlider"
+
+3: ->
+/*
+* ION SLIDER
+*/
+# ionRangeSlider settings replace (line 2316 to 2381 in new_version) with (line 2291 to 2341 in old_version)
+
+________________________________________________________________________________________
+
+47.	pricing-table.html
+	
+	No changes required!
+______________________
+
+48.	profile.html
+	
+	No changes required!
+______________________
+
+49.	projects.html
+
+Diff 1: Add 3 lines (1199 - 1201, in new_version) after line 1197 (in old_version)	
+#  // clears the variable if left blank
+#	"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6'f><'col-sm-6 col-xs-12 hidden-xs'l>r>"+
+#           "t"+
+#           "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+#
+
+______________________
+
+50.	register.html
+	
+	No changes required!
+______________________
+
+51.	search.html
+	
+	No changes required!
+______________________
+
+52.	table.html
+	
+	No changes required!
+______________________
+
+53.	timeline.html
+	
+	No changes required!
+______________________
+
+54.	treeview.html
+	
+	No changes required!
+______________________
+
+55.	typography.html
+	
+	No changes required!
+______________________
+
+56.	validation.html
+	
+	No changes required!
+______________________
+
+57.	widgets.html
+	
+	No changes required!
+______________________
+
+58.	wizard.html
+	
+	No changes required!
+______________________
