@@ -1,0 +1,10 @@
+ *~
+.DS_Store
+.project
+.settings
+.classpath
+.metadata
+node_modules
+bower_components
+npm-debug.log*
+*.log

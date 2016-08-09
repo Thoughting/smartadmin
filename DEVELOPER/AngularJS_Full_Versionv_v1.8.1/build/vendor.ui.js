@@ -4265,550 +4265,1113 @@ remove:function(){return this.each(function(){this.removeSlider()})}};c.fn.ionRa
  * Licensed under MIT (https://github.com/weareoutman/clockpicker/blob/master/LICENSE)
  */
 !function(){function t(t){return document.createElementNS(a,t)}function i(t){return(10>t?"0":"")+t}function e(t){var i=++v+"";return t?t+i:i}function s(s,n){function a(t,i){var e=h.offset(),s=/^touch/.test(t.type),c=e.left+m,a=e.top+m,l=(s?t.originalEvent.touches[0]:t).pageX-c,u=(s?t.originalEvent.touches[0]:t).pageY-a,f=Math.sqrt(l*l+u*u),v=!1;if(!i||!(g-w>f||f>g+w)){t.preventDefault();var b=setTimeout(function(){o.addClass("clockpicker-moving")},200);p&&h.append(H.canvas),H.setHand(l,u,!i,!0),r.off(k).on(k,function(t){t.preventDefault();var i=/^touch/.test(t.type),e=(i?t.originalEvent.touches[0]:t).pageX-c,s=(i?t.originalEvent.touches[0]:t).pageY-a;(v||e!==l||s!==u)&&(v=!0,H.setHand(e,s,!1,!0))}),r.off(d).on(d,function(t){r.off(d),t.preventDefault();var e=/^touch/.test(t.type),s=(e?t.originalEvent.changedTouches[0]:t).pageX-c,p=(e?t.originalEvent.changedTouches[0]:t).pageY-a;(i||v)&&s===l&&p===u&&H.setHand(s,p),"hours"===H.currentView?H.toggleView("minutes",M/2):n.autoclose&&(H.minutesView.addClass("clockpicker-dial-out"),setTimeout(function(){H.done()},M/2)),h.prepend(O),clearTimeout(b),o.removeClass("clockpicker-moving"),r.off(k)})}}var l=c(A),h=l.find(".clockpicker-plate"),f=l.find(".clockpicker-hours"),v=l.find(".clockpicker-minutes"),T=l.find(".clockpicker-am-pm-block"),V="INPUT"===s.prop("tagName"),C=V?s:s.find("input"),P=s.find(".input-group-addon"),H=this;if(this.id=e("cp"),this.element=s,this.options=n,this.isAppended=!1,this.isShown=!1,this.currentView="hours",this.isInput=V,this.input=C,this.addon=P,this.popover=l,this.plate=h,this.hoursView=f,this.minutesView=v,this.amPmBlock=T,this.spanHours=l.find(".clockpicker-span-hours"),this.spanMinutes=l.find(".clockpicker-span-minutes"),this.spanAmPm=l.find(".clockpicker-span-am-pm"),this.amOrPm="PM",n.twelvehour){{var x=['<div class="clockpicker-am-pm-block">','<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-am-button">',"AM</button>",'<button type="button" class="btn btn-sm btn-default clockpicker-button clockpicker-pm-button">',"PM</button>","</div>"].join("");c(x)}c('<button type="button" class="btn btn-sm btn-default clockpicker-button am-button">AM</button>').on("click",function(){H.amOrPm="AM",c(".clockpicker-span-am-pm").empty().append("AM")}).appendTo(this.amPmBlock),c('<button type="button" class="btn btn-sm btn-default clockpicker-button pm-button">PM</button>').on("click",function(){H.amOrPm="PM",c(".clockpicker-span-am-pm").empty().append("PM")}).appendTo(this.amPmBlock)}n.autoclose||c('<button type="button" class="btn btn-sm btn-default btn-block clockpicker-button">'+n.donetext+"</button>").click(c.proxy(this.done,this)).appendTo(l),"top"!==n.placement&&"bottom"!==n.placement||"top"!==n.align&&"bottom"!==n.align||(n.align="left"),"left"!==n.placement&&"right"!==n.placement||"left"!==n.align&&"right"!==n.align||(n.align="top"),l.addClass(n.placement),l.addClass("clockpicker-align-"+n.align),this.spanHours.click(c.proxy(this.toggleView,this,"hours")),this.spanMinutes.click(c.proxy(this.toggleView,this,"minutes")),C.on("focus.clockpicker click.clockpicker",c.proxy(this.show,this)),P.on("click.clockpicker",c.proxy(this.toggle,this));var E,S,I,D=c('<div class="clockpicker-tick"></div>');if(n.twelvehour)for(E=1;13>E;E+=1){S=D.clone(),I=E/6*Math.PI;var B=g;S.css("font-size","120%"),S.css({left:m+Math.sin(I)*B-w,top:m-Math.cos(I)*B-w}),S.html(0===E?"00":E),f.append(S),S.on(u,a)}else for(E=0;24>E;E+=1){S=D.clone(),I=E/6*Math.PI;var z=E>0&&13>E,B=z?b:g;S.css({left:m+Math.sin(I)*B-w,top:m-Math.cos(I)*B-w}),z&&S.css("font-size","120%"),S.html(0===E?"00":E),f.append(S),S.on(u,a)}for(E=0;60>E;E+=5)S=D.clone(),I=E/30*Math.PI,S.css({left:m+Math.sin(I)*g-w,top:m-Math.cos(I)*g-w}),S.css("font-size","120%"),S.html(i(E)),v.append(S),S.on(u,a);if(h.on(u,function(t){0===c(t.target).closest(".clockpicker-tick").length&&a(t,!0)}),p){var O=l.find(".clockpicker-canvas"),j=t("svg");j.setAttribute("class","clockpicker-svg"),j.setAttribute("width",y),j.setAttribute("height",y);var L=t("g");L.setAttribute("transform","translate("+m+","+m+")");var U=t("circle");U.setAttribute("class","clockpicker-canvas-bearing"),U.setAttribute("cx",0),U.setAttribute("cy",0),U.setAttribute("r",2);var W=t("line");W.setAttribute("x1",0),W.setAttribute("y1",0);var N=t("circle");N.setAttribute("class","clockpicker-canvas-bg"),N.setAttribute("r",w);var X=t("circle");X.setAttribute("class","clockpicker-canvas-fg"),X.setAttribute("r",3.5),L.appendChild(W),L.appendChild(N),L.appendChild(X),L.appendChild(U),j.appendChild(L),O.append(j),this.hand=W,this.bg=N,this.fg=X,this.bearing=U,this.g=L,this.canvas=O}}var o,c=window.jQuery,n=c(window),r=c(document),a="http://www.w3.org/2000/svg",p="SVGAngle"in window&&function(){var t,i=document.createElement("div");return i.innerHTML="<svg/>",t=(i.firstChild&&i.firstChild.namespaceURI)==a,i.innerHTML="",t}(),l=function(){var t=document.createElement("div").style;return"transition"in t||"WebkitTransition"in t||"MozTransition"in t||"msTransition"in t||"OTransition"in t}(),h="ontouchstart"in window,u="mousedown"+(h?" touchstart":""),k="mousemove.clockpicker"+(h?" touchmove.clockpicker":""),d="mouseup.clockpicker"+(h?" touchend.clockpicker":""),f=navigator.vibrate?"vibrate":navigator.webkitVibrate?"webkitVibrate":null,v=0,m=100,g=80,b=54,w=13,y=2*m,M=l?350:1,A=['<div class="popover clockpicker-popover">','<div class="arrow"></div>','<div class="popover-title">','<span class="clockpicker-span-hours text-primary"></span>'," : ",'<span class="clockpicker-span-minutes"></span>','<span class="clockpicker-span-am-pm"></span>',"</div>",'<div class="popover-content">','<div class="clockpicker-plate">','<div class="clockpicker-canvas"></div>','<div class="clockpicker-dial clockpicker-hours"></div>','<div class="clockpicker-dial clockpicker-minutes clockpicker-dial-out"></div>',"</div>",'<span class="clockpicker-am-pm-block">',"</span>","</div>","</div>"].join("");s.DEFAULTS={"default":"",fromnow:0,placement:"bottom",align:"left",donetext:"完成",autoclose:!1,twelvehour:!1,vibrate:!0},s.prototype.toggle=function(){this[this.isShown?"hide":"show"]()},s.prototype.locate=function(){var t=this.element,i=this.popover,e=t.offset(),s=t.outerWidth(),o=t.outerHeight(),c=this.options.placement,n=this.options.align,r={};switch(i.show(),c){case"bottom":r.top=e.top+o;break;case"right":r.left=e.left+s;break;case"top":r.top=e.top-i.outerHeight();break;case"left":r.left=e.left-i.outerWidth()}switch(n){case"left":r.left=e.left;break;case"right":r.left=e.left+s-i.outerWidth();break;case"top":r.top=e.top;break;case"bottom":r.top=e.top+o-i.outerHeight()}i.css(r)},s.prototype.show=function(){if(!this.isShown){var t=this;this.isAppended||(o=c(document.body).append(this.popover),n.on("resize.clockpicker"+this.id,function(){t.isShown&&t.locate()}),this.isAppended=!0);var e=((this.input.prop("value")||this.options["default"]||"")+"").split(":");if("now"===e[0]){var s=new Date(+new Date+this.options.fromnow);e=[s.getHours(),s.getMinutes()]}this.hours=+e[0]||0,this.minutes=+e[1]||0,this.spanHours.html(i(this.hours)),this.spanMinutes.html(i(this.minutes)),this.toggleView("hours"),this.locate(),this.isShown=!0,r.on("click.clockpicker."+this.id+" focusin.clockpicker."+this.id,function(i){var e=c(i.target);0===e.closest(t.popover).length&&0===e.closest(t.addon).length&&0===e.closest(t.input).length&&t.hide()}),r.on("keyup.clockpicker."+this.id,function(i){27===i.keyCode&&t.hide()})}},s.prototype.hide=function(){this.isShown=!1,r.off("click.clockpicker."+this.id+" focusin.clockpicker."+this.id),r.off("keyup.clockpicker."+this.id),this.popover.hide()},s.prototype.toggleView=function(t,i){var e="hours"===t,s=e?this.hoursView:this.minutesView,o=e?this.minutesView:this.hoursView;this.currentView=t,this.spanHours.toggleClass("text-primary",e),this.spanMinutes.toggleClass("text-primary",!e),o.addClass("clockpicker-dial-out"),s.css("visibility","visible").removeClass("clockpicker-dial-out"),this.resetClock(i),clearTimeout(this.toggleViewTimer),this.toggleViewTimer=setTimeout(function(){o.css("visibility","hidden")},M)},s.prototype.resetClock=function(t){var i=this.currentView,e=this[i],s="hours"===i,o=Math.PI/(s?6:30),c=e*o,n=s&&e>0&&13>e?b:g,r=Math.sin(c)*n,a=-Math.cos(c)*n,l=this;p&&t?(l.canvas.addClass("clockpicker-canvas-out"),setTimeout(function(){l.canvas.removeClass("clockpicker-canvas-out"),l.setHand(r,a)},t)):this.setHand(r,a)},s.prototype.setHand=function(t,e,s,o){var n,r=Math.atan2(t,-e),a="hours"===this.currentView,l=Math.PI/(a||s?6:30),h=Math.sqrt(t*t+e*e),u=this.options,k=a&&(g+b)/2>h,d=k?b:g;if(u.twelvehour&&(d=g),0>r&&(r=2*Math.PI+r),n=Math.round(r/l),r=n*l,u.twelvehour?a?0===n&&(n=12):(s&&(n*=5),60===n&&(n=0)):a?(12===n&&(n=0),n=k?0===n?12:n:0===n?0:n+12):(s&&(n*=5),60===n&&(n=0)),this[this.currentView]!==n&&f&&this.options.vibrate&&(this.vibrateTimer||(navigator[f](10),this.vibrateTimer=setTimeout(c.proxy(function(){this.vibrateTimer=null},this),100))),this[this.currentView]=n,this[a?"spanHours":"spanMinutes"].html(i(n)),!p)return void this[a?"hoursView":"minutesView"].find(".clockpicker-tick").each(function(){var t=c(this);t.toggleClass("active",n===+t.html())});o||!a&&n%5?(this.g.insertBefore(this.hand,this.bearing),this.g.insertBefore(this.bg,this.fg),this.bg.setAttribute("class","clockpicker-canvas-bg clockpicker-canvas-bg-trans")):(this.g.insertBefore(this.hand,this.bg),this.g.insertBefore(this.fg,this.bg),this.bg.setAttribute("class","clockpicker-canvas-bg"));var v=Math.sin(r)*d,m=-Math.cos(r)*d;this.hand.setAttribute("x2",v),this.hand.setAttribute("y2",m),this.bg.setAttribute("cx",v),this.bg.setAttribute("cy",m),this.fg.setAttribute("cx",v),this.fg.setAttribute("cy",m)},s.prototype.done=function(){this.hide();var t=this.input.prop("value"),e=i(this.hours)+":"+i(this.minutes);this.options.twelvehour&&(e+=this.amOrPm),this.input.prop("value",e),e!==t&&(this.input.triggerHandler("change"),this.isInput||this.element.trigger("change")),this.options.autoclose&&this.input.trigger("blur")},s.prototype.remove=function(){this.element.removeData("clockpicker"),this.input.off("focus.clockpicker click.clockpicker"),this.addon.off("click.clockpicker"),this.isShown&&this.hide(),this.isAppended&&(n.off("resize.clockpicker"+this.id),this.popover.remove())},c.fn.clockpicker=function(t){var i=Array.prototype.slice.call(arguments,1);return this.each(function(){var e=c(this),o=e.data("clockpicker");if(o)"function"==typeof o[t]&&o[t].apply(o,i);else{var n=c.extend({},s.DEFAULTS,e.data(),"object"==typeof t&&t);e.data("clockpicker",new s(e,n))}})}}();
-/* =========================================================
- * bootstrap-colorpicker.js 
- * http://www.eyecon.ro/bootstrap-colorpicker
- * =========================================================
- * Copyright 2012 Stefan Petre
+/*!
+ * Bootstrap Colorpicker v2.3.3
+ * http://mjolnic.github.io/bootstrap-colorpicker/
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
+ * Originally written by (c) 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0.txt
  *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * ========================================================= */
- 
-!function( $ ) {
-	
-	// Color object
-	
-	var Color = function(val) {
-		this.value = {
-			h: 1,
-			s: 1,
-			b: 1,
-			a: 1
-		};
-		this.setColor(val);
-	};
-	
-	Color.prototype = {
-		constructor: Color,
-		
-		//parse a string to HSB
-		setColor: function(val){
-			val = val.toLowerCase();
-			var that = this;
-			$.each( CPGlobal.stringParsers, function( i, parser ) {
-				var match = parser.re.exec( val ),
-					values = match && parser.parse( match ),
-					space = parser.space||'rgba';
-				if ( values ) {
-					if (space === 'hsla') {
-						that.value = CPGlobal.RGBtoHSB.apply(null, CPGlobal.HSLtoRGB.apply(null, values));
-					} else {
-						that.value = CPGlobal.RGBtoHSB.apply(null, values);
-					}
-					return false;
-				}
-			});
-		},
-		
-		setHue: function(h) {
-			this.value.h = 1- h;
-		},
-		
-		setSaturation: function(s) {
-			this.value.s = s;
-		},
-		
-		setLightness: function(b) {
-			this.value.b = 1- b;
-		},
-		
-		setAlpha: function(a) {
-			this.value.a = parseInt((1 - a)*100, 10)/100;
-		},
-		
-		// HSBtoRGB from RaphaelJS
-		// https://github.com/DmitryBaranovskiy/raphael/
-		toRGB: function(h, s, b, a) {
-			if (!h) {
-				h = this.value.h;
-				s = this.value.s;
-				b = this.value.b;
-			}
-			h *= 360;
-			var R, G, B, X, C;
-			h = (h % 360) / 60;
-			C = b * s;
-			X = C * (1 - Math.abs(h % 2 - 1));
-			R = G = B = b - C;
+ */
 
-			h = ~~h;
-			R += [C, X, 0, 0, X, C][h];
-			G += [X, C, C, X, 0, 0][h];
-			B += [0, 0, X, C, C, X][h];
-			return {
-				r: Math.round(R*255),
-				g: Math.round(G*255),
-				b: Math.round(B*255),
-				a: a||this.value.a
-			};
-		},
-		
-		toHex: function(h, s, b, a){
-			var rgb = this.toRGB(h, s, b, a);
-			return '#'+((1 << 24) | (parseInt(rgb.r) << 16) | (parseInt(rgb.g) << 8) | parseInt(rgb.b)).toString(16).substr(1);
-		},
-		
-		toHSL: function(h, s, b, a){
-			if (!h) {
-				h = this.value.h;
-				s = this.value.s;
-				b = this.value.b;
-			}
-			var H = h,
-				L = (2 - s) * b,
-				S = s * b;
-			if (L > 0 && L <= 1) {
-				S /= L;
-			} else {
-				S /= 2 - L;
-			}
-			L /= 2;
-			if (S > 1) {
-				S = 1;
-			}
-			return {
-				h: H,
-				s: S,
-				l: L,
-				a: a||this.value.a
-			};
-		}
-	};
-	
-	// Picker object
-	
-	var Colorpicker = function(element, options){
-		this.element = $(element);
-		var format = options.format||this.element.data('color-format')||'hex';
-		this.format = CPGlobal.translateFormats[format];
-		this.isInput = this.element.is('input');
-		this.component = this.element.is('.color') ? this.element.find('.add-on') : false;
-		
-		this.picker = $(CPGlobal.template).on('mousedown', $.proxy(this.mousedown, this));
-		
-		if (this.isInput) {
-			this.element.on({
-				'focus': $.proxy(this.show, this),
-				'keyup': $.proxy(this.update, this)
-			});
-		} else if (this.component){
-			this.component.on({
-				'click': $.proxy(this.show, this)
-			});
-		} else {
-			this.element.on({
-				'click': $.proxy(this.show, this)
-			});
-		}
-		if (format === 'rgba' || format === 'hsla') {
-			this.picker.addClass('alpha');
-			this.alpha = this.picker.find('.colorpicker-alpha')[0].style;
-		}
-		
-		if (this.component){
-			this.picker.find('.colorpicker-color').hide();
-			this.preview = this.element.find('i')[0].style;
-		} else {
-			this.preview = this.picker.find('div:last')[0].style;
-		}
-		
-		this.base = this.picker.find('div:first')[0].style;
-		this.update();
-	};
-	
-	Colorpicker.prototype = {
-		constructor: Colorpicker,
-		
-		show: function(e) {
-			this.picker.appendTo('body');
-			this.picker.show();
-			this.height = this.component ? this.component.outerHeight() : this.element.outerHeight();
-			this.place();
-			$(window).on('resize', $.proxy(this.place, this));
-			if (!this.isInput) {
-				if (e) {
-					e.stopPropagation();
-					e.preventDefault();
-				}
-			}
-			$(document).on({
-				'mousedown': $.proxy(this.hide, this)
-			});
-			this.element.trigger({
-				type: 'show',
-				color: this.color
-			});
-		},
-		
-		update: function(){
-			this.color = new Color(this.isInput ? this.element.prop('value') : this.element.data('color'));
-			this.picker.find('i')
-				.eq(0).css({left: this.color.value.s*100, top: 100 - this.color.value.b*100}).end()
-				.eq(1).css('top', 100 * (1 - this.color.value.h)).end()
-				.eq(2).css('top', 100 * (1 - this.color.value.a));
-			this.previewColor();
-		},
-		
-		setValue: function(newColor) {
-			this.color = new Color(newColor);
-			this.picker.find('i')
-				.eq(0).css({left: this.color.value.s*100, top: 100 - this.color.value.b*100}).end()
-				.eq(1).css('top', 100 * (1 - this.color.value.h)).end()
-				.eq(2).css('top', 100 * (1 - this.color.value.a));
-			this.previewColor();
-			this.element.trigger({
-				type: 'changeColor',
-				color: this.color
-			});
-		},
-		
-		hide: function(){
-			this.picker.hide().detach();
-			$(window).off('resize', this.place);
-			if (!this.isInput) {
-				$(document).off({
-					'mousedown': this.hide
-				});
-				if (this.component){
-					this.element.find('input').prop('value', this.format.call(this));
-				}
-				this.element.data('color', this.format.call(this));
-			} else {
-				this.element.prop('value', this.format.call(this));
-			}
-			this.element.trigger({
-				type: 'hide',
-				color: this.color
-			});
-		},
-		
-		place: function(){
-			var zIndex = parseInt(this.element.parents().filter(function() {
-							return $(this).css('z-index') != 'auto';
-						}).first().css('z-index'))+10;
-			var offset = this.component ? this.component.parent().offset() : this.element.offset();
-			var height = this.component ? this.component.outerHeight(true) : this.element.outerHeight(true);
-			this.picker.css({
-				top: offset.top + height,
-				left: offset.left,
-				zIndex: zIndex
-			});
-		},
-		
-		//preview color change
-		previewColor: function(){
-			try {
-				this.preview.backgroundColor = this.format.call(this);
-			} catch(e) {
-				this.preview.backgroundColor = this.color.toHex();
-			}
-			//set the color for brightness/saturation slider
-			this.base.backgroundColor = this.color.toHex(this.color.value.h, 1, 1, 1);
-			//set te color for alpha slider
-			if (this.alpha) {
-				this.alpha.backgroundColor = this.color.toHex();
-			}
-		},
-		
-		pointer: null,
-		
-		slider: null,
-		
-		mousedown: function(e){
-			e.stopPropagation();
-			e.preventDefault();
-			
-			var target = $(e.target);
-			
-			//detect the slider and set the limits and callbacks
-			var zone = target.closest('div');
-			if (!zone.is('.colorpicker')) {
-				if (zone.is('.colorpicker-saturation')) {
-					this.slider = $.extend({}, CPGlobal.sliders.saturation);
-				} 
-				else if (zone.is('.colorpicker-hue')) {
-					this.slider = $.extend({}, CPGlobal.sliders.hue);
-				}
-				else if (zone.is('.colorpicker-alpha')) {
-					this.slider = $.extend({}, CPGlobal.sliders.alpha);
-				} else {
-					return false;
-				}
-				var offset = zone.offset();
-				//reference to knob's style
-				this.slider.knob = zone.find('i')[0].style;
-				this.slider.left = e.pageX - offset.left;
-				this.slider.top = e.pageY - offset.top;
-				this.pointer = {
-					left: e.pageX,
-					top: e.pageY
-				};
-				//trigger mousemove to move the knob to the current position
-				$(document).on({
-					mousemove: $.proxy(this.mousemove, this),
-					mouseup: $.proxy(this.mouseup, this)
-				}).trigger('mousemove');
-			}
-			return false;
-		},
-		
-		mousemove: function(e){
-			e.stopPropagation();
-			e.preventDefault();
-			var left = Math.max(
-				0,
-				Math.min(
-					this.slider.maxLeft,
-					this.slider.left + ((e.pageX||this.pointer.left) - this.pointer.left)
-				)
-			);
-			var top = Math.max(
-				0,
-				Math.min(
-					this.slider.maxTop,
-					this.slider.top + ((e.pageY||this.pointer.top) - this.pointer.top)
-				)
-			);
-			this.slider.knob.left = left + 'px';
-			this.slider.knob.top = top + 'px';
-			if (this.slider.callLeft) {
-				this.color[this.slider.callLeft].call(this.color, left/100);
-			}
-			if (this.slider.callTop) {
-				this.color[this.slider.callTop].call(this.color, top/100);
-			}
-			this.previewColor();
-			this.element.trigger({
-				type: 'changeColor',
-				color: this.color
-			});
-			return false;
-		},
-		
-		mouseup: function(e){
-			e.stopPropagation();
-			e.preventDefault();
-			$(document).off({
-				mousemove: this.mousemove,
-				mouseup: this.mouseup
-			});
-			return false;
-		}
-	}
+(function(factory) {
+  "use strict";
+  if (typeof exports === 'object') {
+    module.exports = factory(window.jQuery);
+  } else if (typeof define === 'function' && define.amd) {
+    define(['jquery'], factory);
+  } else if (window.jQuery && !window.jQuery.fn.colorpicker) {
+    factory(window.jQuery);
+  }
+}(function($) {
+  'use strict';
 
-	$.fn.colorpicker = function ( option ) {
-		return this.each(function () {
-			var $this = $(this),
-				data = $this.data('colorpicker'),
-				options = typeof option === 'object' && option;
-			if (!data) {
-				$this.data('colorpicker', (data = new Colorpicker(this, $.extend({}, $.fn.colorpicker.defaults,options))));
-			}
-			if (typeof option === 'string') data[option]();
-		});
-	};
+  /**
+   * Color manipulation helper class
+   *
+   * @param {Object|String} val
+   * @param {Object} predefinedColors
+   * @constructor
+   */
+  var Color = function(val, predefinedColors) {
+    this.value = {
+      h: 0,
+      s: 0,
+      b: 0,
+      a: 1
+    };
+    this.origFormat = null; // original string format
+    if (predefinedColors) {
+      $.extend(this.colors, predefinedColors);
+    }
+    if (val) {
+      if (val.toLowerCase !== undefined) {
+        // cast to string
+        val = val + '';
+        this.setColor(val);
+      } else if (val.h !== undefined) {
+        this.value = val;
+      }
+    }
+  };
 
-	$.fn.colorpicker.defaults = {
-	};
-	
-	$.fn.colorpicker.Constructor = Colorpicker;
-	
-	var CPGlobal = {
-	
-		// translate a format from Color object to a string
-		translateFormats: {
-			'rgb': function(){
-				var rgb = this.color.toRGB();
-				return 'rgb('+rgb.r+','+rgb.g+','+rgb.b+')';
-			},
-			
-			'rgba': function(){
-				var rgb = this.color.toRGB();
-				return 'rgba('+rgb.r+','+rgb.g+','+rgb.b+','+rgb.a+')';
-			},
-			
-			'hsl': function(){
-				var hsl = this.color.toHSL();
-				return 'hsl('+Math.round(hsl.h*360)+','+Math.round(hsl.s*100)+'%,'+Math.round(hsl.l*100)+'%)';
-			},
-			
-			'hsla': function(){
-				var hsl = this.color.toHSL();
-				return 'hsla('+Math.round(hsl.h*360)+','+Math.round(hsl.s*100)+'%,'+Math.round(hsl.l*100)+'%,'+hsl.a+')';
-			},
-			
-			'hex': function(){
-				return  this.color.toHex();
-			}
-		},
-		
-		sliders: {
-			saturation: {
-				maxLeft: 100,
-				maxTop: 100,
-				callLeft: 'setSaturation',
-				callTop: 'setLightness'
-			},
-			
-			hue: {
-				maxLeft: 0,
-				maxTop: 100,
-				callLeft: false,
-				callTop: 'setHue'
-			},
-			
-			alpha: {
-				maxLeft: 0,
-				maxTop: 100,
-				callLeft: false,
-				callTop: 'setAlpha'
-			}
-		},
-		
-		// HSBtoRGB from RaphaelJS
-		// https://github.com/DmitryBaranovskiy/raphael/
-		RGBtoHSB: function (r, g, b, a){
-			r /= 255;
-			g /= 255;
-			b /= 255;
+  Color.prototype = {
+    constructor: Color,
+    // 140 predefined colors from the HTML Colors spec
+    colors: {
+      "aliceblue": "#f0f8ff",
+      "antiquewhite": "#faebd7",
+      "aqua": "#00ffff",
+      "aquamarine": "#7fffd4",
+      "azure": "#f0ffff",
+      "beige": "#f5f5dc",
+      "bisque": "#ffe4c4",
+      "black": "#000000",
+      "blanchedalmond": "#ffebcd",
+      "blue": "#0000ff",
+      "blueviolet": "#8a2be2",
+      "brown": "#a52a2a",
+      "burlywood": "#deb887",
+      "cadetblue": "#5f9ea0",
+      "chartreuse": "#7fff00",
+      "chocolate": "#d2691e",
+      "coral": "#ff7f50",
+      "cornflowerblue": "#6495ed",
+      "cornsilk": "#fff8dc",
+      "crimson": "#dc143c",
+      "cyan": "#00ffff",
+      "darkblue": "#00008b",
+      "darkcyan": "#008b8b",
+      "darkgoldenrod": "#b8860b",
+      "darkgray": "#a9a9a9",
+      "darkgreen": "#006400",
+      "darkkhaki": "#bdb76b",
+      "darkmagenta": "#8b008b",
+      "darkolivegreen": "#556b2f",
+      "darkorange": "#ff8c00",
+      "darkorchid": "#9932cc",
+      "darkred": "#8b0000",
+      "darksalmon": "#e9967a",
+      "darkseagreen": "#8fbc8f",
+      "darkslateblue": "#483d8b",
+      "darkslategray": "#2f4f4f",
+      "darkturquoise": "#00ced1",
+      "darkviolet": "#9400d3",
+      "deeppink": "#ff1493",
+      "deepskyblue": "#00bfff",
+      "dimgray": "#696969",
+      "dodgerblue": "#1e90ff",
+      "firebrick": "#b22222",
+      "floralwhite": "#fffaf0",
+      "forestgreen": "#228b22",
+      "fuchsia": "#ff00ff",
+      "gainsboro": "#dcdcdc",
+      "ghostwhite": "#f8f8ff",
+      "gold": "#ffd700",
+      "goldenrod": "#daa520",
+      "gray": "#808080",
+      "green": "#008000",
+      "greenyellow": "#adff2f",
+      "honeydew": "#f0fff0",
+      "hotpink": "#ff69b4",
+      "indianred": "#cd5c5c",
+      "indigo": "#4b0082",
+      "ivory": "#fffff0",
+      "khaki": "#f0e68c",
+      "lavender": "#e6e6fa",
+      "lavenderblush": "#fff0f5",
+      "lawngreen": "#7cfc00",
+      "lemonchiffon": "#fffacd",
+      "lightblue": "#add8e6",
+      "lightcoral": "#f08080",
+      "lightcyan": "#e0ffff",
+      "lightgoldenrodyellow": "#fafad2",
+      "lightgrey": "#d3d3d3",
+      "lightgreen": "#90ee90",
+      "lightpink": "#ffb6c1",
+      "lightsalmon": "#ffa07a",
+      "lightseagreen": "#20b2aa",
+      "lightskyblue": "#87cefa",
+      "lightslategray": "#778899",
+      "lightsteelblue": "#b0c4de",
+      "lightyellow": "#ffffe0",
+      "lime": "#00ff00",
+      "limegreen": "#32cd32",
+      "linen": "#faf0e6",
+      "magenta": "#ff00ff",
+      "maroon": "#800000",
+      "mediumaquamarine": "#66cdaa",
+      "mediumblue": "#0000cd",
+      "mediumorchid": "#ba55d3",
+      "mediumpurple": "#9370d8",
+      "mediumseagreen": "#3cb371",
+      "mediumslateblue": "#7b68ee",
+      "mediumspringgreen": "#00fa9a",
+      "mediumturquoise": "#48d1cc",
+      "mediumvioletred": "#c71585",
+      "midnightblue": "#191970",
+      "mintcream": "#f5fffa",
+      "mistyrose": "#ffe4e1",
+      "moccasin": "#ffe4b5",
+      "navajowhite": "#ffdead",
+      "navy": "#000080",
+      "oldlace": "#fdf5e6",
+      "olive": "#808000",
+      "olivedrab": "#6b8e23",
+      "orange": "#ffa500",
+      "orangered": "#ff4500",
+      "orchid": "#da70d6",
+      "palegoldenrod": "#eee8aa",
+      "palegreen": "#98fb98",
+      "paleturquoise": "#afeeee",
+      "palevioletred": "#d87093",
+      "papayawhip": "#ffefd5",
+      "peachpuff": "#ffdab9",
+      "peru": "#cd853f",
+      "pink": "#ffc0cb",
+      "plum": "#dda0dd",
+      "powderblue": "#b0e0e6",
+      "purple": "#800080",
+      "red": "#ff0000",
+      "rosybrown": "#bc8f8f",
+      "royalblue": "#4169e1",
+      "saddlebrown": "#8b4513",
+      "salmon": "#fa8072",
+      "sandybrown": "#f4a460",
+      "seagreen": "#2e8b57",
+      "seashell": "#fff5ee",
+      "sienna": "#a0522d",
+      "silver": "#c0c0c0",
+      "skyblue": "#87ceeb",
+      "slateblue": "#6a5acd",
+      "slategray": "#708090",
+      "snow": "#fffafa",
+      "springgreen": "#00ff7f",
+      "steelblue": "#4682b4",
+      "tan": "#d2b48c",
+      "teal": "#008080",
+      "thistle": "#d8bfd8",
+      "tomato": "#ff6347",
+      "turquoise": "#40e0d0",
+      "violet": "#ee82ee",
+      "wheat": "#f5deb3",
+      "white": "#ffffff",
+      "whitesmoke": "#f5f5f5",
+      "yellow": "#ffff00",
+      "yellowgreen": "#9acd32",
+      "transparent": "transparent"
+    },
+    _sanitizeNumber: function(val) {
+      if (typeof val === 'number') {
+        return val;
+      }
+      if (isNaN(val) || (val === null) || (val === '') || (val === undefined)) {
+        return 1;
+      }
+      if (val === '') {
+        return 0;
+      }
+      if (val.toLowerCase !== undefined) {
+        if (val.match(/^\./)) {
+          val = "0" + val;
+        }
+        return Math.ceil(parseFloat(val) * 100) / 100;
+      }
+      return 1;
+    },
+    isTransparent: function(strVal) {
+      if (!strVal) {
+        return false;
+      }
+      strVal = strVal.toLowerCase().trim();
+      return (strVal === 'transparent') || (strVal.match(/#?00000000/)) || (strVal.match(/(rgba|hsla)\(0,0,0,0?\.?0\)/));
+    },
+    rgbaIsTransparent: function(rgba) {
+      return ((rgba.r === 0) && (rgba.g === 0) && (rgba.b === 0) && (rgba.a === 0));
+    },
+    //parse a string to HSB
+    setColor: function(strVal) {
+      strVal = strVal.toLowerCase().trim();
+      if (strVal) {
+        if (this.isTransparent(strVal)) {
+          this.value = {
+            h: 0,
+            s: 0,
+            b: 0,
+            a: 0
+          };
+        } else {
+          this.value = this.stringToHSB(strVal) || {
+            h: 0,
+            s: 0,
+            b: 0,
+            a: 1
+          }; // if parser fails, defaults to black
+        }
+      }
+    },
+    stringToHSB: function(strVal) {
+      strVal = strVal.toLowerCase();
+      var alias;
+      if (typeof this.colors[strVal] !== 'undefined') {
+        strVal = this.colors[strVal];
+        alias = 'alias';
+      }
+      var that = this,
+        result = false;
+      $.each(this.stringParsers, function(i, parser) {
+        var match = parser.re.exec(strVal),
+          values = match && parser.parse.apply(that, [match]),
+          format = alias || parser.format || 'rgba';
+        if (values) {
+          if (format.match(/hsla?/)) {
+            result = that.RGBtoHSB.apply(that, that.HSLtoRGB.apply(that, values));
+          } else {
+            result = that.RGBtoHSB.apply(that, values);
+          }
+          that.origFormat = format;
+          return false;
+        }
+        return true;
+      });
+      return result;
+    },
+    setHue: function(h) {
+      this.value.h = 1 - h;
+    },
+    setSaturation: function(s) {
+      this.value.s = s;
+    },
+    setBrightness: function(b) {
+      this.value.b = 1 - b;
+    },
+    setAlpha: function(a) {
+      this.value.a = Math.round((parseInt((1 - a) * 100, 10) / 100) * 100) / 100;
+    },
+    toRGB: function(h, s, b, a) {
+      if (!h) {
+        h = this.value.h;
+        s = this.value.s;
+        b = this.value.b;
+      }
+      h *= 360;
+      var R, G, B, X, C;
+      h = (h % 360) / 60;
+      C = b * s;
+      X = C * (1 - Math.abs(h % 2 - 1));
+      R = G = B = b - C;
 
-			var H, S, V, C;
-			V = Math.max(r, g, b);
-			C = V - Math.min(r, g, b);
-			H = (C === 0 ? null :
-				V == r ? (g - b) / C :
-				V == g ? (b - r) / C + 2 :
-					(r - g) / C + 4
-				);
-			H = ((H + 360) % 6) * 60 / 360;
-			S = C === 0 ? 0 : C / V;
-			return {h: H||1, s: S, b: V, a: a||1};
-		},
-		
-		HueToRGB: function (p, q, h) {
-			if (h < 0)
-				h += 1;
-			else if (h > 1)
-				h -= 1;
+      h = ~~h;
+      R += [C, X, 0, 0, X, C][h];
+      G += [X, C, C, X, 0, 0][h];
+      B += [0, 0, X, C, C, X][h];
+      return {
+        r: Math.round(R * 255),
+        g: Math.round(G * 255),
+        b: Math.round(B * 255),
+        a: a || this.value.a
+      };
+    },
+    toHex: function(h, s, b, a) {
+      var rgb = this.toRGB(h, s, b, a);
+      if (this.rgbaIsTransparent(rgb)) {
+        return 'transparent';
+      }
+      return '#' + ((1 << 24) | (parseInt(rgb.r) << 16) | (parseInt(rgb.g) << 8) | parseInt(rgb.b)).toString(16).substr(1);
+    },
+    toHSL: function(h, s, b, a) {
+      h = h || this.value.h;
+      s = s || this.value.s;
+      b = b || this.value.b;
+      a = a || this.value.a;
 
-			if ((h * 6) < 1)
-				return p + (q - p) * h * 6;
-			else if ((h * 2) < 1)
-				return q;
-			else if ((h * 3) < 2)
-				return p + (q - p) * ((2 / 3) - h) * 6;
-			else
-				return p;
-		},
-	
-		HSLtoRGB: function (h, s, l, a)
-		{
-			if (s < 0) {
-				s = 0;
-			}
-			var q;
-			if (l <= 0.5) {
-				q = l * (1 + s);
-			} else {
-				q = l + s - (l * s);
-			}
-			
-			var p = 2 * l - q;
+      var H = h,
+        L = (2 - s) * b,
+        S = s * b;
+      if (L > 0 && L <= 1) {
+        S /= L;
+      } else {
+        S /= 2 - L;
+      }
+      L /= 2;
+      if (S > 1) {
+        S = 1;
+      }
+      return {
+        h: isNaN(H) ? 0 : H,
+        s: isNaN(S) ? 0 : S,
+        l: isNaN(L) ? 0 : L,
+        a: isNaN(a) ? 0 : a
+      };
+    },
+    toAlias: function(r, g, b, a) {
+      var rgb = this.toHex(r, g, b, a);
+      for (var alias in this.colors) {
+        if (this.colors[alias] === rgb) {
+          return alias;
+        }
+      }
+      return false;
+    },
+    RGBtoHSB: function(r, g, b, a) {
+      r /= 255;
+      g /= 255;
+      b /= 255;
 
-			var tr = h + (1 / 3);
-			var tg = h;
-			var tb = h - (1 / 3);
+      var H, S, V, C;
+      V = Math.max(r, g, b);
+      C = V - Math.min(r, g, b);
+      H = (C === 0 ? null :
+        V === r ? (g - b) / C :
+        V === g ? (b - r) / C + 2 :
+        (r - g) / C + 4
+      );
+      H = ((H + 360) % 6) * 60 / 360;
+      S = C === 0 ? 0 : C / V;
+      return {
+        h: this._sanitizeNumber(H),
+        s: S,
+        b: V,
+        a: this._sanitizeNumber(a)
+      };
+    },
+    HueToRGB: function(p, q, h) {
+      if (h < 0) {
+        h += 1;
+      } else if (h > 1) {
+        h -= 1;
+      }
+      if ((h * 6) < 1) {
+        return p + (q - p) * h * 6;
+      } else if ((h * 2) < 1) {
+        return q;
+      } else if ((h * 3) < 2) {
+        return p + (q - p) * ((2 / 3) - h) * 6;
+      } else {
+        return p;
+      }
+    },
+    HSLtoRGB: function(h, s, l, a) {
+      if (s < 0) {
+        s = 0;
+      }
+      var q;
+      if (l <= 0.5) {
+        q = l * (1 + s);
+      } else {
+        q = l + s - (l * s);
+      }
 
-			var r = Math.round(CPGlobal.HueToRGB(p, q, tr) * 255);
-			var g = Math.round(CPGlobal.HueToRGB(p, q, tg) * 255);
-			var b = Math.round(CPGlobal.HueToRGB(p, q, tb) * 255);
-			return [r, g, b, a||1];
-		},
-		
-		// a set of RE's that can match strings and generate color tuples.
-		// from John Resig color plugin
-		// https://github.com/jquery/jquery-color/
-		stringParsers: [
-			{
-				re: /rgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d+(?:\.\d+)?)\s*)?\)/,
-				parse: function( execResult ) {
-					return [
-						execResult[ 1 ],
-						execResult[ 2 ],
-						execResult[ 3 ],
-						execResult[ 4 ]
-					];
-				}
-			}, {
-				re: /rgba?\(\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*(?:,\s*(\d+(?:\.\d+)?)\s*)?\)/,
-				parse: function( execResult ) {
-					return [
-						2.55 * execResult[1],
-						2.55 * execResult[2],
-						2.55 * execResult[3],
-						execResult[ 4 ]
-					];
-				}
-			}, {
-				re: /#([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/,
-				parse: function( execResult ) {
-					return [
-						parseInt( execResult[ 1 ], 16 ),
-						parseInt( execResult[ 2 ], 16 ),
-						parseInt( execResult[ 3 ], 16 )
-					];
-				}
-			}, {
-				re: /#([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/,
-				parse: function( execResult ) {
-					return [
-						parseInt( execResult[ 1 ] + execResult[ 1 ], 16 ),
-						parseInt( execResult[ 2 ] + execResult[ 2 ], 16 ),
-						parseInt( execResult[ 3 ] + execResult[ 3 ], 16 )
-					];
-				}
-			}, {
-				re: /hsla?\(\s*(\d+(?:\.\d+)?)\s*,\s*(\d+(?:\.\d+)?)\%\s*,\s*(\d+(?:\.\d+)?)\%\s*(?:,\s*(\d+(?:\.\d+)?)\s*)?\)/,
-				space: 'hsla',
-				parse: function( execResult ) {
-					return [
-						execResult[1]/360,
-						execResult[2] / 100,
-						execResult[3] / 100,
-						execResult[4]
-					];
-				}
-			}
-		],
-		template: '<div class="colorpicker dropdown-menu">'+
-							'<div class="colorpicker-saturation"><i><b></b></i></div>'+
-							'<div class="colorpicker-hue"><i></i></div>'+
-							'<div class="colorpicker-alpha"><i></i></div>'+
-							'<div class="colorpicker-color"><div /></div>'+
-						'</div>'
-	};
+      var p = 2 * l - q;
 
-}( window.jQuery )
+      var tr = h + (1 / 3);
+      var tg = h;
+      var tb = h - (1 / 3);
+
+      var r = Math.round(this.HueToRGB(p, q, tr) * 255);
+      var g = Math.round(this.HueToRGB(p, q, tg) * 255);
+      var b = Math.round(this.HueToRGB(p, q, tb) * 255);
+      return [r, g, b, this._sanitizeNumber(a)];
+    },
+    toString: function(format) {
+      format = format || 'rgba';
+      var c = false;
+      switch (format) {
+        case 'rgb':
+          {
+            c = this.toRGB();
+            if (this.rgbaIsTransparent(c)) {
+              return 'transparent';
+            }
+            return 'rgb(' + c.r + ',' + c.g + ',' + c.b + ')';
+          }
+          break;
+        case 'rgba':
+          {
+            c = this.toRGB();
+            return 'rgba(' + c.r + ',' + c.g + ',' + c.b + ',' + c.a + ')';
+          }
+          break;
+        case 'hsl':
+          {
+            c = this.toHSL();
+            return 'hsl(' + Math.round(c.h * 360) + ',' + Math.round(c.s * 100) + '%,' + Math.round(c.l * 100) + '%)';
+          }
+          break;
+        case 'hsla':
+          {
+            c = this.toHSL();
+            return 'hsla(' + Math.round(c.h * 360) + ',' + Math.round(c.s * 100) + '%,' + Math.round(c.l * 100) + '%,' + c.a + ')';
+          }
+          break;
+        case 'hex':
+          {
+            return this.toHex();
+          }
+          break;
+        case 'alias':
+          return this.toAlias() || this.toHex();
+        default:
+          {
+            return c;
+          }
+          break;
+      }
+    },
+    // a set of RE's that can match strings and generate color tuples.
+    // from John Resig color plugin
+    // https://github.com/jquery/jquery-color/
+    stringParsers: [{
+      re: /rgb\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*?\)/,
+      format: 'rgb',
+      parse: function(execResult) {
+        return [
+          execResult[1],
+          execResult[2],
+          execResult[3],
+          1
+        ];
+      }
+    }, {
+      re: /rgb\(\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*?\)/,
+      format: 'rgb',
+      parse: function(execResult) {
+        return [
+          2.55 * execResult[1],
+          2.55 * execResult[2],
+          2.55 * execResult[3],
+          1
+        ];
+      }
+    }, {
+      re: /rgba\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+      format: 'rgba',
+      parse: function(execResult) {
+        return [
+          execResult[1],
+          execResult[2],
+          execResult[3],
+          execResult[4]
+        ];
+      }
+    }, {
+      re: /rgba\(\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+      format: 'rgba',
+      parse: function(execResult) {
+        return [
+          2.55 * execResult[1],
+          2.55 * execResult[2],
+          2.55 * execResult[3],
+          execResult[4]
+        ];
+      }
+    }, {
+      re: /hsl\(\s*(\d*(?:\.\d+)?)\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*?\)/,
+      format: 'hsl',
+      parse: function(execResult) {
+        return [
+          execResult[1] / 360,
+          execResult[2] / 100,
+          execResult[3] / 100,
+          execResult[4]
+        ];
+      }
+    }, {
+      re: /hsla\(\s*(\d*(?:\.\d+)?)\s*,\s*(\d*(?:\.\d+)?)\%\s*,\s*(\d*(?:\.\d+)?)\%\s*(?:,\s*(\d*(?:\.\d+)?)\s*)?\)/,
+      format: 'hsla',
+      parse: function(execResult) {
+        return [
+          execResult[1] / 360,
+          execResult[2] / 100,
+          execResult[3] / 100,
+          execResult[4]
+        ];
+      }
+    }, {
+      re: /#?([a-fA-F0-9]{2})([a-fA-F0-9]{2})([a-fA-F0-9]{2})/,
+      format: 'hex',
+      parse: function(execResult) {
+        return [
+          parseInt(execResult[1], 16),
+          parseInt(execResult[2], 16),
+          parseInt(execResult[3], 16),
+          1
+        ];
+      }
+    }, {
+      re: /#?([a-fA-F0-9])([a-fA-F0-9])([a-fA-F0-9])/,
+      format: 'hex',
+      parse: function(execResult) {
+        return [
+          parseInt(execResult[1] + execResult[1], 16),
+          parseInt(execResult[2] + execResult[2], 16),
+          parseInt(execResult[3] + execResult[3], 16),
+          1
+        ];
+      }
+    }],
+    colorNameToHex: function(name) {
+      if (typeof this.colors[name.toLowerCase()] !== 'undefined') {
+        return this.colors[name.toLowerCase()];
+      }
+      return false;
+    }
+  };
+
+  /*
+   * Default plugin options
+   */
+  var defaults = {
+    horizontal: false, // horizontal mode layout ?
+    inline: false, //forces to show the colorpicker as an inline element
+    color: false, //forces a color
+    format: false, //forces a format
+    input: 'input', // children input selector
+    container: false, // container selector
+    component: '.add-on, .input-group-addon', // children component selector
+    sliders: {
+      saturation: {
+        maxLeft: 100,
+        maxTop: 100,
+        callLeft: 'setSaturation',
+        callTop: 'setBrightness'
+      },
+      hue: {
+        maxLeft: 0,
+        maxTop: 100,
+        callLeft: false,
+        callTop: 'setHue'
+      },
+      alpha: {
+        maxLeft: 0,
+        maxTop: 100,
+        callLeft: false,
+        callTop: 'setAlpha'
+      }
+    },
+    slidersHorz: {
+      saturation: {
+        maxLeft: 100,
+        maxTop: 100,
+        callLeft: 'setSaturation',
+        callTop: 'setBrightness'
+      },
+      hue: {
+        maxLeft: 100,
+        maxTop: 0,
+        callLeft: 'setHue',
+        callTop: false
+      },
+      alpha: {
+        maxLeft: 100,
+        maxTop: 0,
+        callLeft: 'setAlpha',
+        callTop: false
+      }
+    },
+    template: '<div class="colorpicker dropdown-menu">' +
+      '<div class="colorpicker-saturation"><i><b></b></i></div>' +
+      '<div class="colorpicker-hue"><i></i></div>' +
+      '<div class="colorpicker-alpha"><i></i></div>' +
+      '<div class="colorpicker-color"><div /></div>' +
+      '<div class="colorpicker-selectors"></div>' +
+      '</div>',
+    align: 'right',
+    customClass: null,
+    colorSelectors: null
+  };
+
+  /**
+   * Colorpicker component class
+   *
+   * @param {Object|String} element
+   * @param {Object} options
+   * @constructor
+   */
+  var Colorpicker = function(element, options) {
+    this.element = $(element).addClass('colorpicker-element');
+    this.options = $.extend(true, {}, defaults, this.element.data(), options);
+    this.component = this.options.component;
+    this.component = (this.component !== false) ? this.element.find(this.component) : false;
+    if (this.component && (this.component.length === 0)) {
+      this.component = false;
+    }
+    this.container = (this.options.container === true) ? this.element : this.options.container;
+    this.container = (this.container !== false) ? $(this.container) : false;
+
+    // Is the element an input? Should we search inside for any input?
+    this.input = this.element.is('input') ? this.element : (this.options.input ?
+      this.element.find(this.options.input) : false);
+    if (this.input && (this.input.length === 0)) {
+      this.input = false;
+    }
+    // Set HSB color
+    this.color = new Color(this.options.color !== false ? this.options.color : this.getValue(), this.options.colorSelectors);
+    this.format = this.options.format !== false ? this.options.format : this.color.origFormat;
+
+    if (this.options.color !== false) {
+      this.updateInput(this.color);
+      this.updateData(this.color);
+    }
+
+    // Setup picker
+    this.picker = $(this.options.template);
+    if (this.options.customClass) {
+      this.picker.addClass(this.options.customClass);
+    }
+    if (this.options.inline) {
+      this.picker.addClass('colorpicker-inline colorpicker-visible');
+    } else {
+      this.picker.addClass('colorpicker-hidden');
+    }
+    if (this.options.horizontal) {
+      this.picker.addClass('colorpicker-horizontal');
+    }
+    if (this.format === 'rgba' || this.format === 'hsla' || this.options.format === false) {
+      this.picker.addClass('colorpicker-with-alpha');
+    }
+    if (this.options.align === 'right') {
+      this.picker.addClass('colorpicker-right');
+    }
+    if (this.options.inline === true) {
+      this.picker.addClass('colorpicker-no-arrow');
+    }
+    if (this.options.colorSelectors) {
+      var colorpicker = this;
+      $.each(this.options.colorSelectors, function(name, color) {
+        var $btn = $('<i />').css('background-color', color).data('class', name);
+        $btn.click(function() {
+          colorpicker.setValue($(this).css('background-color'));
+        });
+        colorpicker.picker.find('.colorpicker-selectors').append($btn);
+      });
+      this.picker.find('.colorpicker-selectors').show();
+    }
+    this.picker.on('mousedown.colorpicker touchstart.colorpicker', $.proxy(this.mousedown, this));
+    this.picker.appendTo(this.container ? this.container : $('body'));
+
+    // Bind events
+    if (this.input !== false) {
+      this.input.on({
+        'keyup.colorpicker': $.proxy(this.keyup, this)
+      });
+      this.input.on({
+        'change.colorpicker': $.proxy(this.change, this)
+      });
+      if (this.component === false) {
+        this.element.on({
+          'focus.colorpicker': $.proxy(this.show, this)
+        });
+      }
+      if (this.options.inline === false) {
+        this.element.on({
+          'focusout.colorpicker': $.proxy(this.hide, this)
+        });
+      }
+    }
+
+    if (this.component !== false) {
+      this.component.on({
+        'click.colorpicker': $.proxy(this.show, this)
+      });
+    }
+
+    if ((this.input === false) && (this.component === false)) {
+      this.element.on({
+        'click.colorpicker': $.proxy(this.show, this)
+      });
+    }
+
+    // for HTML5 input[type='color']
+    if ((this.input !== false) && (this.component !== false) && (this.input.attr('type') === 'color')) {
+
+      this.input.on({
+        'click.colorpicker': $.proxy(this.show, this),
+        'focus.colorpicker': $.proxy(this.show, this)
+      });
+    }
+    this.update();
+
+    $($.proxy(function() {
+      this.element.trigger('create');
+    }, this));
+  };
+
+  Colorpicker.Color = Color;
+
+  Colorpicker.prototype = {
+    constructor: Colorpicker,
+    destroy: function() {
+      this.picker.remove();
+      this.element.removeData('colorpicker', 'color').off('.colorpicker');
+      if (this.input !== false) {
+        this.input.off('.colorpicker');
+      }
+      if (this.component !== false) {
+        this.component.off('.colorpicker');
+      }
+      this.element.removeClass('colorpicker-element');
+      this.element.trigger({
+        type: 'destroy'
+      });
+    },
+    reposition: function() {
+      if (this.options.inline !== false || this.options.container) {
+        return false;
+      }
+      var type = this.container && this.container[0] !== document.body ? 'position' : 'offset';
+      var element = this.component || this.element;
+      var offset = element[type]();
+      if (this.options.align === 'right') {
+        offset.left -= this.picker.outerWidth() - element.outerWidth();
+      }
+      this.picker.css({
+        top: offset.top + element.outerHeight(),
+        left: offset.left
+      });
+    },
+    show: function(e) {
+      if (this.isDisabled()) {
+        return false;
+      }
+      this.picker.addClass('colorpicker-visible').removeClass('colorpicker-hidden');
+      this.reposition();
+      $(window).on('resize.colorpicker', $.proxy(this.reposition, this));
+      if (e && (!this.hasInput() || this.input.attr('type') === 'color')) {
+        if (e.stopPropagation && e.preventDefault) {
+          e.stopPropagation();
+          e.preventDefault();
+        }
+      }
+      if ((this.component || !this.input) && (this.options.inline === false)) {
+        $(window.document).on({
+          'mousedown.colorpicker': $.proxy(this.hide, this)
+        });
+      }
+      this.element.trigger({
+        type: 'showPicker',
+        color: this.color
+      });
+    },
+    hide: function() {
+      this.picker.addClass('colorpicker-hidden').removeClass('colorpicker-visible');
+      $(window).off('resize.colorpicker', this.reposition);
+      $(document).off({
+        'mousedown.colorpicker': this.hide
+      });
+      this.update();
+      this.element.trigger({
+        type: 'hidePicker',
+        color: this.color
+      });
+    },
+    updateData: function(val) {
+      val = val || this.color.toString(this.format);
+      this.element.data('color', val);
+      return val;
+    },
+    updateInput: function(val) {
+      val = val || this.color.toString(this.format);
+      if (this.input !== false) {
+        if (this.options.colorSelectors) {
+          var color = new Color(val, this.options.colorSelectors);
+          var alias = color.toAlias();
+          if (typeof this.options.colorSelectors[alias] !== 'undefined') {
+            val = alias;
+          }
+        }
+        this.input.prop('value', val);
+      }
+      return val;
+    },
+    updatePicker: function(val) {
+      if (val !== undefined) {
+        this.color = new Color(val, this.options.colorSelectors);
+      }
+      var sl = (this.options.horizontal === false) ? this.options.sliders : this.options.slidersHorz;
+      var icns = this.picker.find('i');
+      if (icns.length === 0) {
+        return;
+      }
+      if (this.options.horizontal === false) {
+        sl = this.options.sliders;
+        icns.eq(1).css('top', sl.hue.maxTop * (1 - this.color.value.h)).end()
+          .eq(2).css('top', sl.alpha.maxTop * (1 - this.color.value.a));
+      } else {
+        sl = this.options.slidersHorz;
+        icns.eq(1).css('left', sl.hue.maxLeft * (1 - this.color.value.h)).end()
+          .eq(2).css('left', sl.alpha.maxLeft * (1 - this.color.value.a));
+      }
+      icns.eq(0).css({
+        'top': sl.saturation.maxTop - this.color.value.b * sl.saturation.maxTop,
+        'left': this.color.value.s * sl.saturation.maxLeft
+      });
+      this.picker.find('.colorpicker-saturation').css('backgroundColor', this.color.toHex(this.color.value.h, 1, 1, 1));
+      this.picker.find('.colorpicker-alpha').css('backgroundColor', this.color.toHex());
+      this.picker.find('.colorpicker-color, .colorpicker-color div').css('backgroundColor', this.color.toString(this.format));
+      return val;
+    },
+    updateComponent: function(val) {
+      val = val || this.color.toString(this.format);
+      if (this.component !== false) {
+        var icn = this.component.find('i').eq(0);
+        if (icn.length > 0) {
+          icn.css({
+            'backgroundColor': val
+          });
+        } else {
+          this.component.css({
+            'backgroundColor': val
+          });
+        }
+      }
+      return val;
+    },
+    update: function(force) {
+      var val;
+      if ((this.getValue(false) !== false) || (force === true)) {
+        // Update input/data only if the current value is not empty
+        val = this.updateComponent();
+        this.updateInput(val);
+        this.updateData(val);
+        this.updatePicker(); // only update picker if value is not empty
+      }
+      return val;
+
+    },
+    setValue: function(val) { // set color manually
+      this.color = new Color(val, this.options.colorSelectors);
+      this.update(true);
+      this.element.trigger({
+        type: 'changeColor',
+        color: this.color,
+        value: val
+      });
+    },
+    getValue: function(defaultValue) {
+      defaultValue = (defaultValue === undefined) ? '#000000' : defaultValue;
+      var val;
+      if (this.hasInput()) {
+        val = this.input.val();
+      } else {
+        val = this.element.data('color');
+      }
+      if ((val === undefined) || (val === '') || (val === null)) {
+        // if not defined or empty, return default
+        val = defaultValue;
+      }
+      return val;
+    },
+    hasInput: function() {
+      return (this.input !== false);
+    },
+    isDisabled: function() {
+      if (this.hasInput()) {
+        return (this.input.prop('disabled') === true);
+      }
+      return false;
+    },
+    disable: function() {
+      if (this.hasInput()) {
+        this.input.prop('disabled', true);
+        this.element.trigger({
+          type: 'disable',
+          color: this.color,
+          value: this.getValue()
+        });
+        return true;
+      }
+      return false;
+    },
+    enable: function() {
+      if (this.hasInput()) {
+        this.input.prop('disabled', false);
+        this.element.trigger({
+          type: 'enable',
+          color: this.color,
+          value: this.getValue()
+        });
+        return true;
+      }
+      return false;
+    },
+    currentSlider: null,
+    mousePointer: {
+      left: 0,
+      top: 0
+    },
+    mousedown: function(e) {
+      if (!e.pageX && !e.pageY && e.originalEvent && e.originalEvent.touches) {
+        e.pageX = e.originalEvent.touches[0].pageX;
+        e.pageY = e.originalEvent.touches[0].pageY;
+      }
+      e.stopPropagation();
+      e.preventDefault();
+
+      var target = $(e.target);
+
+      //detect the slider and set the limits and callbacks
+      var zone = target.closest('div');
+      var sl = this.options.horizontal ? this.options.slidersHorz : this.options.sliders;
+      if (!zone.is('.colorpicker')) {
+        if (zone.is('.colorpicker-saturation')) {
+          this.currentSlider = $.extend({}, sl.saturation);
+        } else if (zone.is('.colorpicker-hue')) {
+          this.currentSlider = $.extend({}, sl.hue);
+        } else if (zone.is('.colorpicker-alpha')) {
+          this.currentSlider = $.extend({}, sl.alpha);
+        } else {
+          return false;
+        }
+        var offset = zone.offset();
+        //reference to guide's style
+        this.currentSlider.guide = zone.find('i')[0].style;
+        this.currentSlider.left = e.pageX - offset.left;
+        this.currentSlider.top = e.pageY - offset.top;
+        this.mousePointer = {
+          left: e.pageX,
+          top: e.pageY
+        };
+        //trigger mousemove to move the guide to the current position
+        $(document).on({
+          'mousemove.colorpicker': $.proxy(this.mousemove, this),
+          'touchmove.colorpicker': $.proxy(this.mousemove, this),
+          'mouseup.colorpicker': $.proxy(this.mouseup, this),
+          'touchend.colorpicker': $.proxy(this.mouseup, this)
+        }).trigger('mousemove');
+      }
+      return false;
+    },
+    mousemove: function(e) {
+      if (!e.pageX && !e.pageY && e.originalEvent && e.originalEvent.touches) {
+        e.pageX = e.originalEvent.touches[0].pageX;
+        e.pageY = e.originalEvent.touches[0].pageY;
+      }
+      e.stopPropagation();
+      e.preventDefault();
+      var left = Math.max(
+        0,
+        Math.min(
+          this.currentSlider.maxLeft,
+          this.currentSlider.left + ((e.pageX || this.mousePointer.left) - this.mousePointer.left)
+        )
+      );
+      var top = Math.max(
+        0,
+        Math.min(
+          this.currentSlider.maxTop,
+          this.currentSlider.top + ((e.pageY || this.mousePointer.top) - this.mousePointer.top)
+        )
+      );
+      this.currentSlider.guide.left = left + 'px';
+      this.currentSlider.guide.top = top + 'px';
+      if (this.currentSlider.callLeft) {
+        this.color[this.currentSlider.callLeft].call(this.color, left / this.currentSlider.maxLeft);
+      }
+      if (this.currentSlider.callTop) {
+        this.color[this.currentSlider.callTop].call(this.color, top / this.currentSlider.maxTop);
+      }
+      // Change format dynamically
+      // Only occurs if user choose the dynamic format by
+      // setting option format to false
+      if (this.currentSlider.callTop === 'setAlpha' && this.options.format === false) {
+
+        // Converting from hex / rgb to rgba
+        if (this.color.value.a !== 1) {
+          this.format = 'rgba';
+          this.color.origFormat = 'rgba';
+        }
+
+        // Converting from rgba to hex
+        else {
+          this.format = 'hex';
+          this.color.origFormat = 'hex';
+        }
+      }
+      this.update(true);
+
+      this.element.trigger({
+        type: 'changeColor',
+        color: this.color
+      });
+      return false;
+    },
+    mouseup: function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $(document).off({
+        'mousemove.colorpicker': this.mousemove,
+        'touchmove.colorpicker': this.mousemove,
+        'mouseup.colorpicker': this.mouseup,
+        'touchend.colorpicker': this.mouseup
+      });
+      return false;
+    },
+    change: function(e) {
+      this.keyup(e);
+    },
+    keyup: function(e) {
+      if ((e.keyCode === 38)) {
+        if (this.color.value.a < 1) {
+          this.color.value.a = Math.round((this.color.value.a + 0.01) * 100) / 100;
+        }
+        this.update(true);
+      } else if ((e.keyCode === 40)) {
+        if (this.color.value.a > 0) {
+          this.color.value.a = Math.round((this.color.value.a - 0.01) * 100) / 100;
+        }
+        this.update(true);
+      } else {
+        this.color = new Color(this.input.val(), this.options.colorSelectors);
+        // Change format dynamically
+        // Only occurs if user choose the dynamic format by
+        // setting option format to false
+        if (this.color.origFormat && this.options.format === false) {
+          this.format = this.color.origFormat;
+        }
+        if (this.getValue(false) !== false) {
+          this.updateData();
+          this.updateComponent();
+          this.updatePicker();
+        }
+      }
+      this.element.trigger({
+        type: 'changeColor',
+        color: this.color,
+        value: this.input.val()
+      });
+    }
+  };
+
+  $.colorpicker = Colorpicker;
+
+  $.fn.colorpicker = function(option) {
+    var pickerArgs = arguments,
+      rv = null;
+
+    var $returnValue = this.each(function() {
+      var $this = $(this),
+        inst = $this.data('colorpicker'),
+        options = ((typeof option === 'object') ? option : {});
+      if ((!inst) && (typeof option !== 'string')) {
+        $this.data('colorpicker', new Colorpicker(this, options));
+      } else {
+        if (typeof option === 'string') {
+          rv = inst[option].apply(inst, Array.prototype.slice.call(pickerArgs, 1));
+        }
+      }
+    });
+    if (option === 'getValue') {
+      return rv;
+    }
+    return $returnValue;
+  };
+
+  $.fn.colorpicker.constructor = Colorpicker;
+
+}));
+
 /*
  * bootstrap-tagsinput v0.5.0 by Tim Schlechter
  * 
