@@ -58,7 +58,8 @@
     "bower-jvectormap": "~1.2.2",
     "dropzone": "~4.2.0",
     "angular-google-maps": "~2.3.1",
-    "angular-datatables": "^0.5.3"
+    "angular-datatables": "^0.5.3",
+    "bootstrap-add-clear": "^1.0.6"
   },
   "devDependencies": {
     "mjolnic-bootstrap-colorpicker": "bootstrap-colorpicker#^2.3.3"

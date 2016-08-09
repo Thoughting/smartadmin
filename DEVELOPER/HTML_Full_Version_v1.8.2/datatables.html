@@ -28,6 +28,7 @@
 
 		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -4477,17 +4478,18 @@
 		<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
 		<!-- Voice command : plugin -->
 		<script src="js/speech/voicecommand.min.js"></script>
-
-		<!-- SmartChat UI : plugin -->
-		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 		<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
 
 		<!-- PAGE RELATED PLUGIN(S) -->
 		<script src="js/plugin/datatables/jquery.dataTables.min.js"></script>
+
+		<!-- SmartChat UI : plugin -->
+		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 		<script src="js/plugin/datatables/dataTables.colVis.min.js"></script>
 		<script src="js/plugin/datatables/dataTables.tableTools.min.js"></script>
 		<script src="js/plugin/datatables/dataTables.bootstrap.min.js"></script>
 		<script src="js/plugin/datatable-responsive/datatables.responsive.min.js"></script>
+		<script src="js/plugin/bootstrap-add-clear/bootstrap-add-clear.min.js"></script>
 
 		<script type="text/javascript">
 		
@@ -4662,7 +4664,13 @@
 			});
 			
 			/* END TABLETOOLS */
-		
+
+			/* START BOOTSTRAP-ADD-CLEAR */
+			$(":input").addClear({
+				top: "32px"
+			});
+			/* END BOOTSTRAP-ADD-CLEAR */
+					
 		})
 
 		</script>

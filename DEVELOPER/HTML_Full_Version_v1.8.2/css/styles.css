@@ -1,0 +1,65 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+
+ .dataTables_filter .input-group-addon {
+    width: 32px;
+    margin-top: 0;
+    float: left;
+    height: 32px;
+    padding-top: 8px;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    top: 32px;
+}
+
+.add-clear-span > input.form-control {
+    text-indent: 22px;
+    height: 32px;
+}
+
+span.add-clear-x.form-control-feedback.glyphicon.glyphicon-remove-circle {
+    display: inline-block;
+    z-index: 3;
+}
+
+.input-group-btn {
+    left: -2px;
+}
+
+.firstbtn {
+    margin-left: -10px;
+}
+
+.secondbtn {
+    margin-left: -40px;
+}
+
+.thirdbtn {
+    margin-left: -20px;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid black;
+}
