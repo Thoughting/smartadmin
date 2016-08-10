@@ -1,0 +1,57 @@
+{
+  "name": "paramquery-select",
+  "fullname": "paramquery-select",
+  "version": "1.3.0",
+  "author": {
+    "name": "Paramvir Dhindsa",
+    "url": "http://www.paramquery.com/"
+  },
+  "maintainers": [
+    {
+      "name": "Paramvir Dhindsa",
+      "url": "http://www.paramquery.com/"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "GPL v3",
+      "url": "http://paramquery.com/license"
+    }
+  ],
+  "description": "jQuery plugin to select multiple or single options with checkboxes, radio buttons, with support for search, grouping, disabled options and jQueryUI themeRoller ready.",
+  "homepage": "http://paramquery.com/select",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paramquery/select.git"
+  },
+  "docs": "http://paramquery.com/api/select",
+  "demo": "http://paramquery.com/select",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "multiple-select",
+    "option",
+    "checkbox",
+    "radio",
+    "collision-detection",
+    "ui",
+    "theme-roller",
+    "grouping",
+    "search",
+    "disabled-options"
+  ],
+  "bugs": "https://github.com/paramquery/select/issues",
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "jquery-ui": ">=1.9.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-debug-task": "^0.1.5",
+    "grunt-stripcomments": "^0.3.1"
+  }
+}

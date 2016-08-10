@@ -18,7 +18,6 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-multiselect.css">
 
 		<!-- SmartAdmin RTL Support -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css"> 
@@ -30,6 +29,9 @@
 		<!-- Demo purpose only: goes with demo.js, you can delete this css when designing your own WebApp -->
 		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+		<link rel="stylesheet" href="css/common.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/ui-lightness/jquery-ui.css" />
 
 		<!-- FAVICONS -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -908,6 +910,46 @@
 									</div>
 								</div>
 
+								<div class="row filter-row">
+										<div class="col-sm-4">
+											    <select id="select3" multiple=multiple style="padding: 20px; margin: 20px;width:250px;">            
+											        <optgroup label="Brazil">
+											            <option>RJ</option>
+											            <option>SP</option>
+											        </optgroup>
+											        <optgroup label="Canada">
+											            <option>BC</option>
+											            <option>Québec</option>
+											        </optgroup>
+											        <optgroup label="Ireland">
+											            <option>Co. Cork</option>
+											        </optgroup>
+											        <optgroup label="UK">
+											            <option>Essex</option>
+											            <option>Isle of Wight</option>
+											        </optgroup>
+											        <optgroup label="USA">
+											            <option>AK</option>
+											            <option>CA</option>
+											            <option>ID</option>
+											            <option>MT</option>
+											            <option>NM</option>
+											            <option>OR</option>
+											            <option>WA</option>
+											            <option>WY</option>
+											        </optgroup>
+											        <optgroup label="Venezuela">
+											            <option>DF</option>
+											            <option>Lara</option>
+											            <option>Nueva Esparta</option>
+											            <option>Táchira</option>
+											        </optgroup>
+
+											    </select>
+
+										</div>
+								</div>
+
 								<br>
 								<div class="table-responsive">
 									
@@ -1302,8 +1344,6 @@
 		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 		<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
 		<script src="js/plugin/bootstrap-add-clear/bootstrap-add-clear.min.js"></script>
-		<script src="js/plugin/bootstrap-multiselect/dist/js/bootstrap-multiselect-collapsible-groups.js"></script>
-		<script src="js/plugin/bootstrap-multiselect/dist/js/bootstrap-multiselect.js"></script>
 
 		<!-- PAGE RELATED PLUGIN(S) 
 		<script src="..."></script>-->
@@ -1317,7 +1357,7 @@
 			$("#search-project").focus();
 
 			/* START BOOTSTRAP-ADD-CLEAR */
-			$(":input").addClear({
+			$("#search-user").addClear({
 				top: "0px",
 				right: "-2px"
 			});
@@ -1341,7 +1381,7 @@
 			    }
 			});
 		
-			 // Date Range Picker
+			 // Date Range Picker Start
 			$("#from").datepicker({
 			    defaultDate: "+1w",
 			    changeMonth: true,
@@ -1363,10 +1403,30 @@
 			        $("#from").datepicker("option", "minDate", selectedDate);
 			    }
 			});
+
+			// Date Range Picker End
 		
 		})
 
 		</script>
+
+        <!--pqSelect dependencies-->
+        <link rel="stylesheet" href="js/plugin/select/pqselect.dev.css" />    
+        <script src = "js/plugin/select/pqselect.dev.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                
+                //initialize the pqSelect widget.
+                $("#select3").pqSelect({
+                    multiplePlaceholder: 'Products',
+                    bootstrap: {on: true},
+                    checkbox: true //adds checkbox to options    
+                }).on("change", function(evt) {
+                    var val = $(this).val();
+                    //alert(val);
+                }).pqSelect('open');
+            });
+        </script>
 
 		<!-- Your GOOGLE ANALYTICS CODE Below -->
 		<script type="text/javascript">

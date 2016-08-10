@@ -1,0 +1,34 @@
+{
+  "name": "john",
+  "version": "1.3.0",
+  "homepage": "http://paramquery.com/select",
+  "authors": [
+    "Paramvir Dhindsa <http://paramquery.com>"
+  ],
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "jquery-plugin",
+    "select",
+    "jQuery",
+    "jQueryUI",
+    "bootstrap",
+    "theme",
+    "theme-roller",
+    "collision-detection",
+    "grouping",
+    "multiple",
+    "options",
+    "checkbox",
+    "radio",
+    "disabled"
+  ],
+  "license": "GNU GPL v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
