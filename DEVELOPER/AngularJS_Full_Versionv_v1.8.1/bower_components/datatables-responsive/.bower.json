@@ -1,0 +1,13 @@
+{
+  "name": "datatables-responsive",
+  "homepage": "https://github.com/Comanche/datatables-responsive",
+  "_release": "bbb1aa223a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "bbb1aa223a83159977e6917aeb570296d4d2a6a2"
+  },
+  "_source": "git://github.com/Comanche/datatables-responsive.git",
+  "_target": "*",
+  "_originalSource": "git://github.com/Comanche/datatables-responsive"
+}

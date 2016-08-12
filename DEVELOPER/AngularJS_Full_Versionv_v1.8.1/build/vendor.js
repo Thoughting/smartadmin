@@ -1690,3 +1690,755 @@ _fnCallbackFire:u,_fnLengthOverflow:Sa,_fnRenderer:Na,_fnDataSource:y,_fnRowAttr
  * License: MIT
  */
 "undefined"!=typeof module&&"undefined"!=typeof exports&&module.exports===exports&&(module.exports="datatables.bootstrap"),function(a,b,c,d){"use strict";function e(a,b){function d(d,e){if(!f){var g=a.overrideProperties(b.getOptions().ColVis,e?e.ColVis:null);c.fn.DataTable.ColVis&&d(function(){c(".ColVis_MasterButton").attr("class","ColVis_MasterButton "+g.classes.masterButton),c(".ColVis_Button").removeClass("ColVis_Button")}),f=!0}}function e(){f&&c.fn.DataTable.ColVis&&(f=!1)}var f=!1;return{integrate:d,deIntegrate:e}}function f(a){function b(a){function b(a,b){function c(){return f.hasBootstrap=!0,d.isObject(f.oClasses)?f.oClasses.sPageButtonActive="active":f.oClasses={sPageButtonActive:"active"},f}function e(a){return f.bootstrap=a,f}var f=a(b);return f.withBootstrap=c,f.withBootstrapOptions=e,f}var c=a.newOptions,e=a.fromSource,f=a.fromFnPromise;return a.newOptions=function(){return b(c)},a.fromSource=function(a){return b(e,a)},a.fromFnPromise=function(a){return b(f,a)},a}a.decorator("DTOptionsBuilder",b),b.$inject=["$delegate"]}function g(a,b){function c(a){a&&a.hasBootstrap?b.integrate(a):b.deIntegrate()}var d={preRender:c};a.registerPlugin(d)}function h(a,e,f,g){function h(){t.oStdClasses=d.copy(c.fn.dataTableExt.oStdClasses),t.fnPagingInfo=c.fn.dataTableExt.oApi.fnPagingInfo,t.renderer=d.copy(c.fn.DataTable.ext.renderer),c.fn.DataTable.TableTools&&(t.TableTools={classes:d.copy(c.fn.DataTable.TableTools.classes),oTags:d.copy(c.fn.DataTable.TableTools.DEFAULTS.oTags)})}function i(){c.extend(c.fn.dataTableExt.oStdClasses,t.oStdClasses),c.fn.dataTableExt.oApi.fnPagingInfo=t.fnPagingInfo,c.extend(!0,c.fn.DataTable.ext.renderer,t.renderer)}function j(){c.extend(c.fn.dataTableExt.oStdClasses,{sWrapper:"dataTables_wrapper form-inline",sFilterInput:"form-control input-sm",sLengthSelect:"form-control input-sm",sFilter:"dataTables_filter",sLength:"dataTables_length"})}function k(){c.fn.dataTableExt.oApi.fnPagingInfo=function(a){return{iStart:a._iDisplayStart,iEnd:a.fnDisplayEnd(),iLength:a._iDisplayLength,iTotal:a.fnRecordsTotal(),iFilteredTotal:a.fnRecordsDisplay(),iPage:-1===a._iDisplayLength?0:Math.ceil(a._iDisplayStart/a._iDisplayLength),iTotalPages:-1===a._iDisplayLength?0:Math.ceil(a.fnRecordsDisplay()/a._iDisplayLength)}}}function l(a){c.extend(!0,c.fn.DataTable.ext.renderer,{pageButton:{_:function(d,e,h,i,j,k){var l,m,n=d.oClasses,o=d.language?d.language.oPaginate:d.oLanguage.oPaginate,p=0,q=g.overrideProperties(f.getOptions().pagination,a?a.pagination:null),r=c("<ul></ul>",{"class":q.classes.ul}),s=function(a,b){var e,f,g,i,q=function(a){a.preventDefault(),c.fn.DataTable.ext.internal._fnPageChange(d,a.data.action,!0)};for(e=0,f=b.length;f>e;e++)if(i=b[e],c.isArray(i)){i.DT_el="li";var t=c("<"+(i.DT_el||"div")+"/>").appendTo(r);s(t,i)}else{l="",m="";var u,v=c("<li></li>");switch(i){case"ellipsis":r.append('<li class="disabled"><a href="#" onClick="event.preventDefault()">&hellip;</a></li>');break;case"first":l=o.sFirst,m=i,0>=j&&(v.addClass(n.sPageButtonDisabled),u=!0);break;case"previous":l=o.sPrevious,m=i,0>=j&&(v.addClass(n.sPageButtonDisabled),u=!0);break;case"next":l=o.sNext,m=i,j>=k-1&&(v.addClass(n.sPageButtonDisabled),u=!0);break;case"last":l=o.sLast,m=i,j>=k-1&&(v.addClass(n.sPageButtonDisabled),u=!0);break;default:l=i+1,m="",j===i&&v.addClass(n.sPageButtonActive)}l&&(v.appendTo(r),g=c("<a>",{href:"#","class":m,"aria-controls":d.sTableId,"data-dt-idx":p,tabindex:d.iTabIndex,id:0===h&&"string"==typeof i?d.sTableId+"_"+i:null}).html(l).appendTo(v),c.fn.DataTable.ext.internal._fnBindAction(g,{action:i},q),p++)}};try{var t=c(b.activeElement).data("dt-idx"),u=c(e).empty();r.appendTo(u),s(u,i),null!==t&&c(e).find("[data-dt-idx="+t+"]").focus()}catch(v){}}}})}function m(a){d.isFunction(a)&&s.push(a)}function n(a){r||(h(),j(),k(),l(a),m(function(){c("div.dataTables_filter").find("input").addClass("form-control"),c("div.dataTables_length").find("select").addClass("form-control")}),r=!0)}function o(a){return a.dom&&a.dom!==c.fn.dataTable.defaults.sDom?a.dom:f.getOptions().dom}function p(b){n(b.bootstrap),a.integrate(b.bootstrap),e.integrate(m,b.bootstrap),b.dom=o(b),d.isUndefined(b.fnDrawCallback)&&(b.fnDrawCallback=function(){for(var a=0;a<s.length;a++)s[a]()})}function q(){r&&(i(),a.deIntegrate(),e.deIntegrate(),r=!1)}var r=!1,s=[],t={};return{integrate:p,deIntegrate:q}}function i(a,b,c){function d(){return b.overrideProperties(c,a.bootstrapOptions)}return{getOptions:d}}function j(a,b){function e(d){if(!h){if(g(),c.fn.DataTable.TableTools){var e=a.overrideProperties(b.getOptions().TableTools,d?d.TableTools:null);c.extend(!0,c.fn.DataTable.TableTools.classes,e.classes),c.extend(!0,c.fn.DataTable.TableTools.DEFAULTS.oTags,e.DEFAULTS.oTags)}h=!0}}function f(){h&&c.fn.DataTable.TableTools&&i.TableTools&&(c.extend(!0,c.fn.DataTable.TableTools.classes,i.TableTools.classes),c.extend(!0,c.fn.DataTable.TableTools.DEFAULTS.oTags,i.TableTools.oTags),h=!1)}function g(){c.fn.DataTable.TableTools&&(i.TableTools={classes:d.copy(c.fn.DataTable.TableTools.classes),oTags:d.copy(c.fn.DataTable.TableTools.DEFAULTS.oTags)})}var h=!1,i={};return{integrate:e,deIntegrate:f}}d.module("datatables.bootstrap.colvis",["datatables.bootstrap.options","datatables.util"]).service("DTBootstrapColVis",e),e.$inject=["DTPropertyUtil","DTBootstrapDefaultOptions"],d.module("datatables.bootstrap",["datatables.bootstrap.options","datatables.bootstrap.tabletools","datatables.bootstrap.colvis"]).config(f).run(g).service("DTBootstrap",h),f.$inject=["$provide"],g.$inject=["DTRendererService","DTBootstrap"],h.$inject=["DTBootstrapTableTools","DTBootstrapColVis","DTBootstrapDefaultOptions","DTPropertyUtil"],d.module("datatables.bootstrap.options",["datatables.options","datatables.util"]).constant("DT_BOOTSTRAP_DEFAULT_OPTIONS",{TableTools:{classes:{container:"DTTT btn-group",buttons:{normal:"btn btn-default",disabled:"disabled"},collection:{container:"DTTT_dropdown dropdown-menu",buttons:{normal:"",disabled:"disabled"}},print:{info:"DTTT_print_info modal"},select:{row:"active"}},DEFAULTS:{oTags:{collection:{container:"ul",button:"li",liner:"a"}}}},ColVis:{classes:{masterButton:"btn btn-default"}},pagination:{classes:{ul:"pagination"}},dom:"<'row'<'col-xs-6'l><'col-xs-6'f>r>t<'row'<'col-xs-6'i><'col-xs-6'p>>"}).factory("DTBootstrapDefaultOptions",i),i.$inject=["DTDefaultOptions","DTPropertyUtil","DT_BOOTSTRAP_DEFAULT_OPTIONS"],d.module("datatables.bootstrap.tabletools",["datatables.bootstrap.options","datatables.util"]).service("DTBootstrapTableTools",j),j.$inject=["DTPropertyUtil","DTBootstrapDefaultOptions"]}(window,document,jQuery,angular);
+/*!
+ * bootstrap-add-clear v1.0.6 (http://github.com/gesquive/bootstrap-add-clear)
+ * Licensed under MIT (http://github.com/gesquive/bootstrap-add-clear/blob/master/LICENSE)
+ */
+!function(i,n,s,e){function t(n,s){this.element=n,this.options=i.extend({},o,s),this._defaults=o,this._name=a,this.init()}var a="addClear";t.prototype={init:function(){var n=i(this.element),s=this,e=this.options;n.wrap("<div class='add-clear-span has-feedback "+e.wrapperClass+"'></div>"),n.after(i("<span class='add-clear-x form-control-feedback "+e.symbolClass+"' style='display: none;'>"+e.closeSymbol+"</span>")),n.next().css({color:e.color,cursor:"pointer","text-decoration":"none",display:"none",overflow:"hidden",position:"absolute","pointer-events":"auto",right:e.right,top:e.top,zindex:e.zindex},this),n.val().length>=1&&e.showOnLoad===!0&&n.siblings(".add-clear-x").show(),n.on("focus.addclear",function(){i(this).val().length>=1&&i(this).siblings(".add-clear-x").show()}),n.on("blur.addclear",function(){var n=this;e.hideOnBlur&&setTimeout(function(){i(n).siblings(".add-clear-x").hide()},50)}),n.on("keyup.addclear",function(n){e.clearOnEscape===!0&&27==n.keyCode&&(i(this).val("").focus(),e.onClear&&e.onClear(i(this).siblings("input"))),i(this).val().length>=1?i(this).siblings(".add-clear-x").show():i(this).siblings(".add-clear-x").hide()}),n.on("input.addclear change.addclear paste.addclear",function(){i(this).val().length>=1?i(this).siblings(".add-clear-x").show():i(this).siblings(".add-clear-x").hide()}),n.siblings(".add-clear-x").on("click.addclear",function(n){i(this).siblings(s.element).val(""),i(this).hide(),e.returnFocus===!0&&i(this).siblings(s.element).focus(),e.onClear&&e.onClear(i(this).siblings("input")),n.preventDefault()})}},i.fn[a]=function(n,s,e){return this.each(function(){if("option"===n){var o=i(this);"show"===s?o.siblings(".add-clear-x").show():"hide"===s&&o.siblings(".add-clear-x").hide()}var l=s&&"show"!==s&&"hide"!==s;if(l){var d=i.data(this,"plugin_"+a);if(!d||!d.options)throw"Cannot set option, plugin was not instantiated";d.options[s]=e}else i.data(this,"plugin_"+a)||i.data(this,"plugin_"+a,new t(this,n))})},i.fn[a].Constructor=t;var o=i.fn[a].defaults={closeSymbol:"",symbolClass:"glyphicon glyphicon-remove-circle",color:"#CCC",top:0,right:0,returnFocus:!0,showOnLoad:!1,onClear:null,hideOnBlur:!1,clearOnEscape:!0,wrapperClass:"",zindex:100}}(jQuery,window,document);
+
+/*!
+ * ParamQuery Select v1.3.2
+ *
+ * Copyright (c) 2015-2016 Paramvir Dhindsa (http://paramquery.com)
+ * Released under GNU General Public License v3
+ * http://paramquery.com/license
+ *
+ */
+!function(a){"function"==typeof define&&define.amd?define(["jquery","jui/core","jui/widget","jui/position"],a):a(jQuery)}(function(a){"use strict";a.support.touch="ontouchend"in document;var b={};b.options=function(){var b=a.ui.keyCode;return{radio:!1,singlePlaceholder:"Select an option",checkbox:!1,displayText:"{0} of {1} selected",maxDisplay:4,maxSelect:0,multiplePlaceholder:"Select options",selectallText:"Select All",closeOnWindowScroll:!0,closeOnWindowResize:!0,itemCls:"pq-select-item ui-corner-all ui-state-default",bootstrap:{on:!1,btn:"btn btn-default",popupCont:"panel panel-default",selectCls:"label label-info",itemCls:"label label-default",closeIcon:"glyphicon glyphicon-remove",searchIcon:"glyphicon glyphicon-search",hoverCls:""},position:{my:"left top",at:"left bottom",collision:"flipfit"},kcOpen:[b.DOWN,b.ENTER,b.UP],deselect:!0,hoverCls:"pq-state-hover",search:!0,searchRule:"contain",_selectCls:"pq-state-select",selectCls:"ui-state-highlight",width:null,maxSelectReach:null,maxSelectExceed:null}}(),b._setButtonWidth=function(){var a=this.element;a.show();var b=this.options,c=b.width?b.width:a[0].offsetWidth,c=1*c==c?c+"px":c;a.hide(),this.$button[0].style.width=c},b._create=function(){var b=this,c=this.options,d=c.bootstrap,e=d.on,f=this.element,g=f.attr("name"),h=f.attr("multiple"),i=a(["<div class='pq-select-button pq-no-capture ",e?d.btn:"ui-state-default ui-widget ui-corner-all","' "," data-name='",g,"' tabindex='0'>",h?"":"<span class='pq-icon "+(e?"caret":"ui-icon ui-icon-triangle-1-s")+"'></span>","<div class='pq-select-text'></div>","</div>"].join(""));e&&(c.selectCls+=" "+d.selectCls,c.itemCls+=" "+d.itemCls),this.$button=i,this.multiple=h?!0:!1,this.selector="label.pq-select-option-label.ui-state-enable:visible",this._setButtonWidth(),f.after(i),i.attr("name",g),i.addClass(f.attr("class")),f.addClass("pq-select"),this._extractData(),this._createPopup(),this._createMenu(),i.on({click:function(){if(!c.disabled){var d=a(this).parent(".pq-select-item"),e=parseInt(d.attr("data-id"));return b.select(e,!1),b.setText(),b.focus(),b.triggerChange(),!1}}},".pq-item-close"),i.on({click:function(){return c.disabled?void 0:(b.toggle(),!1)},focus:function(){c.disabled||a(this).addClass("ui-state-hover")},blur:function(){a(this).removeClass("ui-state-hover")},mousedown:function(){c.disabled||a(this).addClass("ui-state-active")},mouseup:function(){c.disabled||a(this).removeClass("ui-state-active")},keydown:function(d){if(!c.disabled){var e=d.keyCode,f=c.kcOpen,g=a.ui.keyCode;-1!==a.inArray(e,f)?b.open():e===g.ESCAPE?b.close():e===g.SPACE&&b.toggle()}}}),this.setText();var j=this.eventNamespace;a(window).on("resize"+j,function(a){b.onWindowResize(a)}),a(window).on("scroll"+j,function(a){b.onWindowScroll(a)})},b.onWindowResize=function(){this.options.closeOnWindowResize&&this.close()},b.onWindowScroll=function(){this.options.closeOnWindowScroll&&this.close()},b.focus=function(){var b=this;a.support.touch||b.$search.focus()},a.paramquery=a.paramquery||{},a.paramquery.scrollView=function(b){var c=b[0],d=c.offsetTop,e=c.offsetHeight,f=c.offsetParent,g=f.scrollTop,h=f.clientHeight;e+d>h+g?a(f).scrollTop(e+d-h):g>d&&a(f).scrollTop(d)},a.paramquery.pageMove=function(b,c,d){var e,f=b[0].offsetHeight,g=b[0].offsetParent,h=g.clientHeight;do{if(e=b[d?"nextAll":"prevAll"](c),!e.length)break;e=a(e[0]),f+=e[0].offsetHeight,b=e}while(h>f);return a.paramquery.scrollView(b),b},b._move=function(b){var c=this.$lastlabelHighlight;if(c&&c.length){var d=c[b?"nextAll":"prevAll"](this.selector);d.length&&(d=a(d[0]),this._highlight(d))}else this._hightlight()},b._onkeydown=function(b){var c=b.keyCode,d=a.ui.keyCode;if(c===d.DOWN||c===d.UP)return this._move(c===d.DOWN),!1;if(c===d.PAGE_DOWN||c===d.PAGE_UP){var e=a.paramquery.pageMove(this.$lastlabelHighlight,this.selector,c===d.PAGE_DOWN);return this._highlight(e),!1}if(c===d.TAB)return this.close(),!1;if(c===d.ESCAPE)this.close();else if(c===d.ENTER&&this.$lastlabelHighlight)return this.$lastlabelHighlight.trigger("label_changed"),!1},b.search=function(a){for(var b=this.data,c=this.options.searchRule,d="contain"===c,e=0,f=b.length;f>e;e++){var g=b[e],h=g.text.toUpperCase(),i=h.indexOf(a);g.searchIndx=null,-1===i?g.hidden=!0:d===!1&&i>0?g.hidden=!0:(g.hidden=!1,g.searchIndx=i)}},b._onkeyupsearch=function(b){var c=a(b.target),d=a.trim(c.val()).toUpperCase(),e=(this.data,b.keyCode),f=a.ui.keyCode,g=[f.DOWN,f.UP,f.ENTER,f.PAGE_DOWN,f.PAGE_UP];-1===a.inArray(e,g)&&(this.search(d),this._createMenu(),this.positionPopup())},b._onChange=function(a,b){var c=this,d=c.options,e=this.multiple,f=d.maxSelect,g=c.selectIndx;if(e){if(b&&f&&g.length>=f)return c._trigger("maxSelectExceed",null,{option:c.$options[a]}),c.focus(),!1}else if(g.length){var h=g[0];if(a===h)return!1;b&&this.select(h,!1)}this.select(a,b),c.setText(),c.setSelectAllState(),e?f&&g.length>=f?c._trigger("maxSelectReach",null,{option:c.$options[a]})!==!1&&c.close():c.focus():c.close(),this.triggerChange()},b.setSelectAllState=function(){var a=this.$popup.find(".pq-select-all input");if(a.length){for(var b=this.data,c=0,d=0,e=0,f=b.length;f>e;e++){var g=b[e],h=g.selected,i=g.disabled;i||(c++,h&&d++)}c===d?a.prop("checked",!0):a.prop("checked",!1)}},b.getInstance=function(){return{select:this}},b.select=function(b,c){var d=this,e=d.selectIndx,f=this.options,g=this.data[b],h=a(d.$options[b]),i=d.$popup.find("#pq-option-"+this.uuid+"-"+b),j=i.find("input");if(i[c?"addClass":"removeClass"](f._selectCls+" "+f.selectCls),j.prop("checked",c),g.selected=c,d.multiple){if(c)e.push(b);else{var k=a.inArray(b,e);e.splice(k,1)}h.prop("selected",c)}else c?(e.length&&(this.data[e[0]].selected=!1),e[0]=b,h.prop("selected",c)):(d.selectIndx=[0],this.data[0].selected=!0,a(d.$options[0]).prop("selected",!0))},b.triggerChange=function(){this.element.trigger("change")},b._extractData=function(){var b,c=this.data=[],d=this.element,e=d.find("option,optgroup"),f=!1,g=!1;this.$options=d.find("option");for(var h=0,i=e.length;i>h;h++){var j=e[h],k=a(j);if("optgroup"!=j.nodeName.toLowerCase()){var l=k.prop("selected"),m=k.prop("disabled");!m&&f&&(m=g);var n=k.text();c.push({selected:l,disabled:m,text:n,optgroup:b})}else b=k.attr("label"),f=!0,g=k.prop("disabled")}this.grouping=f},b.refresh=function(){this.search(""),this._setButtonWidth(),this._createPopup(),this._createMenu(),this.setText()},b.refreshData=function(){this._extractData(),this.refresh()},b._createPopup=function(){var b=this,c=(this.data,this.options),d=c.bootstrap,e=d.on,f=b.multiple,g="",h="";f&&c.selectallText&&!c.maxSelect&&(h=["<label class='pq-select-all ui-widget-header ui-corner-all'>","<span class='ui-icon ui-icon-close ",e?d.closeIcon:"","'></span>","<input type='checkbox' >",c.selectallText,"</label>"].join("")),c.search&&(g=["<div class='pq-select-search-div ui-corner-all'>","<span class='ui-icon ui-icon-search ",e?d.searchIcon:"","' />","<div class='pq-select-search-div1'>","<input type='text' class='pq-select-search-input' autocomplete='off' />","</div>","</div>"].join(""));var i=a(["<div class='pq-select-popup-cont ",e?d.popupCont:"","'>","<div class='pq-select-popup ui-widget-content ui-corner-all'>",h,g,"</div><div class='pq-select-shadow-fix'></div></div>"].join(""));i.css({"font-family":this.$button.css("font-family"),"font-size":this.$button.css("font-size")});var j=i.children("div.pq-select-popup");j.on({keydown:function(a){return b._onkeydown(a)}}),j.find(".ui-icon-close").on({click:function(){return b.close(),!1}}),j.on({change:function(){for(var c=(b.element,a(this)),d=c.prop("checked")?!0:!1,e=b.data,f=b.$options,g=0;g<e.length;g++){var h=e[g];h.disabled||h.selected===d||(h.selected=d,a(f[g]).prop("selected",d))}b._createMenu(),b.setText(),b.focus(),b.triggerChange()}},"label.pq-select-all input"),j.on({mouseenter:function(){b._highlight(a(this))},label_changed:function(){var d=a(this),e=d.attr("id");if(e){var f=!d.hasClass(c._selectCls),g=parseInt(e.split("-")[3]);return b._onChange(g,f)}}},"label.pq-select-option-label.ui-state-enable"),f&&c.checkbox||!f&&c.radio?j.on({click:function(){var b=a(this).closest("label");b.trigger("label_changed")}},"label.pq-select-option-label.ui-state-enable input"):j.on({click:function(){a(this).trigger("label_changed")}},"label.pq-select-option-label.ui-state-enable"),this.$popupCont&&this.$popupCont.remove(),this.$popupCont=i,this.$popup=j,this.$search=j.find(".pq-select-search-input").on({keyup:function(a){return b._onkeyupsearch(a)}}),a(document.body).append(i),this.setSelectAllState()},b._createMenu=function(){for(var b,c,d,e,f=this,g=this.data,h=this.uuid,i=this.options,j=i.search?a.trim(this.$search.val()).length:0,k=" "+i._selectCls+" "+i.selectCls+" ",l=f.multiple,m=l?i.checkbox?'type="checkbox"':"":i.radio?'type="radio"':"",n=m?"pq-left-input":this.grouping?"pq-left-group":"",o=f.selectIndx=[],p=[],q=0;q<g.length;q++){var r=g[q],c=r.disabled,s=r.selected,t=r.text,u=r.optgroup;if(s&&o.push(q),!r.hidden){e!==u&&(p.push("<div class='pq-select-optgroup'>",u,"</div>"),e=u);var v=s?' checked="checked" ':"",w=s?k:"",x=c?' disabled="disabled" ':"",d=c?"ui-state-disabled":"ui-state-enable",y="";(0!==q||""!==t)&&(j&&(b=r.searchIndx,t=t.substr(0,b)+"<span class='pq-select-search-highlight'>"+t.substr(b,j)+"</span>"+t.substr(b+j,t.length)),p.push("<label class='pq-select-option-label ",w,d,"'",y," id='pq-option-",h,"-",q,"'>",m?"<input "+m+" "+v+x+" >":"","<span class='",n,"'>",t,"</span>","</label>"))}}var z=a(["<div class='pq-select-menu' >",p.join(""),"</div>"].join(""));this.$menu&&this.$menu.remove(),this.$popup.append(z),delete this.$lastlabelHighlight,this.$menu=z,this._highlight()},b._highlight=function(b){var c=this.options.hoverCls;b&&b.length||(b=this.$menu.find("label.pq-select-option-label.ui-state-enable:visible:first")),b.length&&(this.$lastlabelHighlight&&this.$lastlabelHighlight.removeClass(c),b.addClass(c),this.$lastlabelHighlight=b,a.paramquery.scrollView(b))},b._setPopupWidth=function(){var a=this.$button[0].offsetWidth;this.$popupCont.width(a)},b.positionPopup=function(){var b=this.options,c=this.$button,d=a.extend({of:c},b.position),e=this.$popupCont;this._setPopupWidth(),e.position(d)},b.isOpen=function(){return this.$popupCont&&"block"==this.$popupCont.css("display")?!0:!1},b.open=function(){{var b=this,c=this.$popupCont;this.$menu,this.selectIndx}return this.isOpen()?!1:(c.show(),this.positionPopup(),this._highlight(),a(document).on("mousedown"+b.eventNamespace,function(c){var d=a(c.target);d.closest(b.$popup).length||d.closest(b.$button).length||b.close()}),void(this.options.search?b.focus():c.attr("tabindex","-1").focus()))},b.setText=function(){var a,b=this.$button,c=b.find(".pq-select-text"),d=this.element,e=this.options,f=e.deselect,g=this.data,h=e.itemCls,i=e.bootstrap,j=i.on?i.closeIcon:"ui-icon ui-icon-close",k=function(a){return f?["<span class='",h,"' data-id = '",a,"'>","<span class='pq-item-close ",j,"'></span>","<span class='pq-select-item-text'>",g[a].text,"</span>","</span>"].join(""):g[a].text},l=this.selectIndx;if(this.multiple){b.addClass("pq-select-multiple");var m=l.length,n=e.maxDisplay,o=g.length;if(m>0)if(n>=m){for(var p=[],q=0;m>q;q++){var r=l[q];p.push(k(r))}a=p.join(f?"":", ")}else a=e.displayText,a=a.replace("{0}",l.length),a=a.replace("{1}",o);else a=d.attr("data-placeholder"),a||(a=e.multiplePlaceholder)}else{b.addClass("pq-select-single"),c.css("maxWidth",b.width()-16);var r=l[0],a=r>=0?g[r].text:"";null!=a&&""!==a?a=k(r):(a=d.attr("data-placeholder"),a||(a=e.singlePlaceholder))}c.html(a),this.multiple||c.find(".pq-select-item-text").css({maxWidth:b.width()-35}),this.positionPopup()},b.close=function(b){this.isOpen()&&(b=b||{},b.focus!==!1&&this.$button.focus(),this.$popupCont.hide()),a(document).off(this.eventNamespace)},b.toggle=function(){this.isOpen()?this.close():this.open()},b.disable=function(){this.option({disabled:!0})},b.enable=function(){this.option({disabled:!1})},b._destroy=function(){this.$popupCont.remove(),this.$button.remove(),this.element.removeClass("pq-select").show();var b=this.eventNamespace;a(document).off(b),a(window).off(b)},b.destroy=function(){this._super();for(var a in this)delete this[a]},b._setOption=function(a,b){"disabled"==a&&(b===!0?(this.close(),this.$button.addClass("ui-state-disabled")):b===!1&&this.$button.removeClass("ui-state-disabled")),this._super(a,b)},a.widget("paramquery.pqSelect",b)});
+/**
+ * Display a nice easy to use multiselect list
+ * @Version: 2.3.0
+ * @Author: Patrick Springstubbe
+ * @Contact: @JediNobleclem
+ * @Website: springstubbe.us
+ * @Source: https://github.com/nobleclem/jQuery-MultiSelect
+ * @Notes: If select list is hidden on page load use the jquery.actual plugin
+ *         to resolve issues with preselected items placeholder text
+ *         https://github.com/dreamerslab/jquery.actual
+ *
+ * Usage:
+ *     $('select[multiple]').multiselect();
+ *     $('select[multiple]').multiselect({ texts: { placeholder: 'Select options' } });
+ *     $('select[multiple]').multiselect('reload');
+ *     $('select[multiple]').multiselect( 'loadOptions', [{
+ *         name   : 'Option Name 1',
+ *         value  : 'option-value-1',
+ *         checked: false,
+ *         attributes : {
+ *             custom1: 'value1',
+ *             custom2: 'value2'
+ *         }
+ *     },{
+ *         name   : 'Option Name 2',
+ *         value  : 'option-value-2',
+ *         checked: false,
+ *         attributes : {
+ *             custom1: 'value1',
+ *             custom2: 'value2'
+ *         }
+ *     }]);
+ *
+ **/
+(function($){
+    var defaults = {
+        columns       : 1,                // how many columns should be use to show options
+        search        : false,            // include option search box
+        // search filter options
+        searchOptions : {
+            showOptGroups: false,                // show option group titles if no options remaining
+            onSearch     : function( element ){} // fires on keyup before search on options happens
+        },
+        texts: {
+            placeholder:     'Select options', // text to use in dummy input
+            search:          'Search',         // search input placeholder text
+            selectedOptions: ' selected',      // selected suffix text
+            selectAll:       'Select all',     // select all text
+            noneSelected:    'None Selected'   // None selected text
+        },
+        selectAll     : false, // add select all option
+        selectGroup   : false, // select entire optgroup
+        minHeight     : 200,   // minimum height of option overlay
+        maxHeight     : null,  // maximum height of option overlay
+        showCheckbox  : true,  // display the checkbox to the user
+        jqActualOpts  : {},    // options for jquery.actual
+        optionAttributes: [],  // attributes to copy to the checkbox from the option element
+
+        // Callbacks
+        onLoad        : function( element ) {},  // fires at end of list initialization
+        onOptionClick : function( element, option ){}, // fires when an option is clicked
+        onControlClose: function( element ){}, // fires when the options list is closed
+
+        // @NOTE: these are for future development
+        maxWidth      : null,  // maximum width of option overlay (or selector)
+        minSelect     : false, // minimum number of items that can be selected
+        maxSelect     : false, // maximum number of items that can be selected
+    };
+
+    var msCounter = 1;
+
+    // FOR LEGACY BROWSERS (talking to you IE8)
+    if( typeof Array.prototype.map !== 'function' ) {
+        Array.prototype.map = function( callback, thisArg ) {
+            if( typeof thisArg === 'undefined' ) {
+                thisArg = this;
+            }
+
+            return $.isArray( thisArg ) ? $.map( thisArg, callback ) : [];
+        };
+    }
+    if( typeof String.prototype.trim !== 'function' ) {
+        String.prototype.trim = function() {
+            return this.replace(/^\s+|\s+$/g, '');
+        }
+    }
+
+    function MultiSelect( element, options )
+    {
+        this.element = element;
+        this.options = $.extend( true, {}, defaults, options );
+
+        /** BACKWARDS COMPATIBILITY **/
+        if( 'placeholder' in this.options ) {
+            this.options.texts.placeholder = this.options.placeholder;
+            delete this.options.placeholder;
+        }
+        if( 'default' in this.options.searchOptions ) {
+            this.options.texts.search = this.options.searchOptions['default'];
+            delete this.options.searchOptions['default'];
+        }
+        /** END BACKWARDS COMPATIBILITY **/
+
+        // load this instance
+        this.load();
+    }
+
+    MultiSelect.prototype = {
+        /* LOAD CUSTOM MULTISELECT DOM/ACTIONS */
+        load: function() {
+            var instance = this;
+
+            // make sure this is a select list and not loaded
+            if( (instance.element.nodeName != 'SELECT') || $(instance.element).hasClass('jqmsLoaded') ) {
+                return true;
+            }
+
+            // sanity check so we don't double load on a select element
+            $(instance.element).addClass('jqmsLoaded').data( 'plugin_multiselect-instance', instance );
+
+            // add option container
+            $(instance.element).after('<div class="ms-options-wrap"><button>None Selected</button><div class="ms-options"><ul id="mslist" class"mslist"></ul></div></div>');
+
+            var placeholder = $(instance.element).next('.ms-options-wrap').find('> button:first-child');
+            var optionsWrap = $(instance.element).next('.ms-options-wrap').find('> .ms-options');
+            var optionsList = optionsWrap.find('> ul');
+            var hasOptGroup = $(instance.element).find('optgroup').length ? true : false;
+
+            // don't show checkbox (add class for css to hide checkboxes)
+            if( !instance.options.showCheckbox ) {
+                optionsWrap.addClass('hide-checkbox');
+            }
+
+            // determine maxWidth
+            var maxWidth = null;
+            if( typeof instance.options.width == 'number' ) {
+                optionsWrap.parent().css( 'position', 'relative' );
+                maxWidth = instance.options.width;
+            }
+            else if( typeof instance.options.width == 'string' ) {
+                $( instance.options.width ).css( 'position', 'relative' );
+                maxWidth = '100%';
+            }
+            else {
+                optionsWrap.parent().css( 'position', 'relative' );
+            }
+
+            // cacl default maxHeight
+            var maxHeight = ($(window).height() - optionsWrap.offset().top + $(window).scrollTop() - 20);
+
+            // override with user defined maxHeight
+            if( instance.options.maxHeight ) {
+                maxHeight = instance.options.maxHeight;
+            }
+
+            // maxHeight cannot be less than options.minHeight
+            maxHeight = maxHeight < instance.options.minHeight ? instance.options.minHeight : maxHeight;
+
+            optionsWrap.css({
+                maxWidth : maxWidth,
+                minHeight: instance.options.minHeight,
+                maxHeight: maxHeight,
+                overflow : 'auto'
+            }).hide();
+
+            // isolate options scroll
+            // @source: https://github.com/nobleclem/jQuery-IsolatedScroll
+            optionsWrap.bind( 'touchmove mousewheel DOMMouseScroll', function ( e ) {
+                if( ($(this).outerHeight() < $(this)[0].scrollHeight) ) {
+                    var e0 = e.originalEvent,
+                        delta = e0.wheelDelta || -e0.detail;
+
+                    if( ($(this).outerHeight() + $(this)[0].scrollTop) > $(this)[0].scrollHeight ) {
+                        e.preventDefault();
+                        this.scrollTop += ( delta < 0 ? 1 : -1 );
+                    }
+                }
+            });
+
+            // hide options menus if click happens off of the list placeholder button
+            $(document).off('click.ms-hideopts').on('click.ms-hideopts', function( event ){
+                if( !$(event.target).closest('.ms-options-wrap').length ) {
+                    if( $('.ms-options-wrap > .ms-options:visible').length ) {
+                        $('.ms-options-wrap > .ms-options:visible').each(function(){
+                            $(this).hide();
+
+                            var thisInst = $(this).parent().prev('.jqmsLoaded').data('plugin_multiselect-instance');
+
+                            // USER CALLBACK
+                            if( typeof thisInst.options.onControlClose == 'function' ) {
+                                thisInst.options.onControlClose( thisInst.element );
+                            }
+                        });
+                    }
+                }
+            });
+
+            // disable button action
+            placeholder.bind('mousedown',function( event ){
+                // ignore if its not a left click
+                if( event.which != 1 ) {
+                    return true;
+                }
+
+                // hide other menus before showing this one
+                $('.ms-options-wrap > .ms-options:visible').each(function(){
+                    if( $(this).parent().prev()[0] != optionsWrap.parent().prev()[0] ) {
+                        $(this).hide();
+                    }
+                });
+
+                // show/hide options
+                optionsWrap.toggle();
+
+                // recalculate height
+                if( optionsWrap.is(':visible') ) {
+                    optionsWrap.css( 'maxHeight', '' );
+
+                    // cacl default maxHeight
+                    var maxHeight = ($(window).height() - optionsWrap.offset().top + $(window).scrollTop() - 20);
+
+                    // override with user defined maxHeight
+                    if( instance.options.maxHeight ) {
+                        maxHeight = instance.options.maxHeight;
+                    }
+
+                    // maxHeight cannot be less than options.minHeight
+                    maxHeight = maxHeight < instance.options.minHeight ? instance.options.minHeight : maxHeight;
+
+                    optionsWrap.css( 'maxHeight', maxHeight );
+                }
+            }).click(function( event ){ event.preventDefault(); });
+
+            // add placeholder copy
+            if( instance.options.texts.placeholder ) {
+                placeholder.text( instance.options.texts.placeholder );
+            }
+
+            // add search box
+            if( instance.options.search ) {
+                optionsList.before('<div class="ms-search"><input id="mssearch" type="text" value="" placeholder="'+ instance.options.texts.search +'" /></div>');
+
+                var search = optionsWrap.find('.ms-search input');
+                search.on('keyup', function(){
+                    // ignore keystrokes that don't make a difference
+                    if( $(this).data('lastsearch') == $(this).val() ) {
+                        return true;
+                    }
+
+                    $(this).data('lastsearch', $(this).val() );
+
+                    // USER CALLBACK
+                    if( typeof instance.options.searchOptions.onSearch == 'function' ) {
+                        instance.options.searchOptions.onSearch( instance.element );
+                    }
+
+                    // search non optgroup li's
+                    optionsList.find('li:not(.optgroup)').each(function(){
+                        var optText = $(this).text();
+
+                        // show option if string exists
+                        if( optText.toLowerCase().indexOf( search.val().toLowerCase() ) > -1 ) {
+                            $(this).show();
+                        }
+                        // don't hide selected items
+                        else if( !$(this).hasClass('selected') ) {
+                            $(this).hide();
+                        }
+
+                        // hide / show optgroups depending on if options within it are visible
+                        if( !instance.options.searchOptions.showOptGroups && $(this).closest('li.optgroup') ) {
+                            $(this).closest('li.optgroup').show();
+
+                            if( $(this).closest('li.optgroup').find('li:visible').length ) {
+                                $(this).closest('li.optgroup').show();
+                            }
+                            else {
+                                $(this).closest('li.optgroup').hide();
+                            }
+                        }
+                    });
+                });
+            }
+
+            // add global select all options
+            if( instance.options.selectAll ) {
+                optionsList.before('<a href="#" class="ms-selectall global">' + instance.options.texts.selectAll + '</a>');
+            }
+
+            // handle select all option
+            optionsWrap.on('click', '.ms-selectall', function( event ){
+                event.preventDefault();
+
+                if( $(this).hasClass('global') ) {
+                    // check if any selected if so then select them
+                    if( optionsList.find('li:not(.optgroup)').filter(':not(.selected)').filter(':visible').length ) {
+                        optionsList.find('li:not(.optgroup)').filter(':not(.selected)').filter(':visible').find('input[type="checkbox"]').trigger('click');
+                    }
+                    // deselect everything
+                    else {
+                        optionsList.find('li:not(.optgroup).selected:visible input[type="checkbox"]').trigger('click');
+                    }
+                }
+                else if( $(this).closest('li').hasClass('optgroup') ) {
+                    var optgroup = $(this).closest('li.optgroup');
+
+                    // check if any selected if so then select them
+                    if( optgroup.find('li:not(.selected)').filter(':visible').length ) {
+                        optgroup.find('li:not(.selected):visible input[type="checkbox"]').trigger('click');
+                    }
+                    // deselect everything
+                    else {
+                        optgroup.find('li.selected:visible input[type="checkbox"]').trigger('click');
+                    }
+                }
+            });
+
+            // add options to wrapper
+            var options = [];
+            $(instance.element).children().each(function(){
+                if( this.nodeName == 'OPTGROUP' ) {
+                    var groupOptions = [];
+
+                    $(this).children('option').each(function(){
+                        var thisOptionAtts = {};
+                        for( var i = 0; i < instance.options.optionAttributes.length; i++ ) {
+                            var thisOptAttr = instance.options.optionAttributes[ i ];
+
+                            if( $(this).attr( thisOptAttr ) !== undefined ) {
+                                thisOptionAtts[ thisOptAttr ] = $(this).attr( thisOptAttr );
+                            }
+                        }
+
+                        groupOptions.push({
+                            name   : $(this).text(),
+                            value  : $(this).val(),
+                            checked: $(this).prop( 'selected' ),
+                            attributes: thisOptionAtts
+                        });
+                    });
+
+                    options.push({
+                        label  : $(this).attr('label'),
+                        options: groupOptions
+                    });
+                }
+                else if( this.nodeName == 'OPTION' ) {
+                    var thisOptionAtts = {};
+                    for( var i = 0; i < instance.options.optionAttributes.length; i++ ) {
+                        var thisOptAttr = instance.options.optionAttributes[ i ];
+
+                        if( $(this).attr( thisOptAttr ) !== undefined ) {
+                            thisOptionAtts[ thisOptAttr ] = $(this).attr( thisOptAttr );
+                        }
+                    }
+
+                    options.push({
+                        name      : $(this).text(),
+                        value     : $(this).val(),
+                        checked   : $(this).prop( 'selected' ),
+                        attributes: thisOptionAtts
+                    });
+                }
+                else {
+                    // bad option
+                    return true;
+                }
+            });
+            instance.loadOptions( options, true, false );
+
+            // BIND SELECT ACTION
+            optionsWrap.on( 'click', 'input[type="checkbox"]', function(){
+                $(this).closest( 'li' ).toggleClass( 'selected' );
+
+                var select = optionsWrap.parent().prev();
+
+                // toggle clicked option
+                select.find('option[value="'+ $(this).val() +'"]').prop(
+                    'selected', $(this).is(':checked')
+                ).closest('select').trigger('change');
+
+                // USER CALLBACK
+                if( typeof instance.options.onOptionClick == 'function' ) {
+                    instance.options.onOptionClick(instance.element, this);
+                }
+
+                instance._updatePlaceholderText();
+            });
+
+            // BIND FOCUS EVENT
+            optionsWrap.on('focusin', 'input[type="checkbox"]', function(){
+                $(this).closest('label').addClass('focused');
+            }).on('focusout', 'input[type="checkbox"]', function(){
+                $(this).closest('label').removeClass('focused');
+            });
+
+            // USER CALLBACK
+            if( typeof instance.options.onLoad === 'function' ) {
+                instance.options.onLoad( instance.element );
+            }
+
+            // hide native select list
+            $(instance.element).hide();
+        },
+
+        /* LOAD SELECT OPTIONS */
+        loadOptions: function( options, overwrite, updateSelect ) {
+            overwrite    = (typeof overwrite == 'boolean') ? overwrite : true;
+            updateSelect = (typeof updateSelect == 'boolean') ? updateSelect : true;
+
+            var instance    = this;
+            var optionsList = $(instance.element).next('.ms-options-wrap').find('> .ms-options > ul');
+            var optionsWrap = $(instance.element).next('.ms-options-wrap').find('> .ms-options');
+            var select      = optionsWrap.parent().prev();
+
+            if( overwrite ) {
+                optionsList.find('> li').remove();
+
+                if( updateSelect ) {
+                    select.find('> *').remove();
+                }
+            }
+
+            for( var key in options ) {
+                // Prevent prototype methods injected into options from being iterated over.
+                if( !options.hasOwnProperty( key ) ) {
+                    continue;
+                }
+
+                var thisOption      = options[ key ];
+                var container       = $('<li></li>');
+                var appendContainer = true;
+
+                // OPTGROUP
+                if( thisOption.hasOwnProperty('options') ) {
+                    optionsList.find('> li.optgroup > span.label').each(function(){
+                        if( $(this).text() == thisOption.label ) {
+                            container       = $(this).closest('.optgroup');
+                            appendContainer = false;
+                        }
+                    });
+
+                    // prepare to append optgroup to select element
+                    if( updateSelect ) {
+                        if( select.find('optgroup[label="'+ thisOption.label +'"]').length ) {
+                            var optGroup = select.find('optgroup[label="'+ thisOption.label +'"]');
+                        }
+                        else {
+                            var optGroup = $('<optgroup label="'+ thisOption.label +'"></optgroup>');
+                                select.append( optGroup );
+                        }
+                    }
+
+                    // setup container
+                    if( appendContainer ) {
+                        container.addClass('optgroup');
+                        container.append('<span class="label">'+ thisOption.label +'</span>');
+                        container.find('> .label').css({
+                            clear: 'both'
+                        });
+
+                        // add select all link
+                        if( instance.options.selectGroup ) {
+                            container.append('<a href="#" class="ms-selectall">' + instance.options.texts.selectAll + '</a>')
+                        }
+
+                        container.append('<ul></ul>');
+                    }
+
+                    for( var gKey in thisOption.options ) {
+                        // Prevent prototype methods injected into options from
+                        // being iterated over.
+                        if( !thisOption.options.hasOwnProperty( gKey ) ) {
+                            continue;
+                        }
+
+                        var thisGOption = thisOption.options[ gKey ];
+                        var gContainer  = $('<li></li>').addClass('ms-reflow');
+
+                        instance._addOption( gContainer, thisGOption );
+
+                        container.find('> ul').append( gContainer );
+
+                        // add option to optgroup in select element
+                        if( updateSelect ) {
+                            var selOption = $('<option value="'+ thisGOption.value +'">'+ thisGOption.name +'</option>');
+
+                            // add custom user attributes
+                            if( thisGOption.hasOwnProperty('attributes') && Object.keys( thisGOption.attributes ).length ) {
+                                //selOption.attr( thisGOption.attributes );
+                            }
+
+                            // mark option as selected
+                            if( thisGOption.checked ) {
+                                selOption.prop( 'selected', true );
+                            }
+
+                            optGroup.append( selOption );
+                        }
+                    }
+                }
+                // OPTION
+                else if( thisOption.hasOwnProperty('value') ) {
+                    container.addClass('ms-reflow')
+
+                    // add option to ms dropdown
+                    instance._addOption( container, thisOption );
+
+                    if( updateSelect ) {
+                        var selOption = $('<option value="'+ thisOption.value +'">'+ thisOption.name +'</option>');
+
+                        // add custom user attributes
+                        if( thisOption.hasOwnProperty('attributes') && Object.keys( thisOption.attributes ).length ) {
+                            selOption.attr( thisOption.attributes );
+                        }
+
+                        // mark option as selected
+                        if( thisOption.checked ) {
+                            selOption.prop( 'selected', true );
+                        }
+
+                        select.append( selOption );
+                    }
+                }
+
+                if( appendContainer ) {
+                    optionsList.append( container );
+                }
+            }
+
+            optionsList.find('.ms-reflow input[type="checkbox"]').each(function( idx ){
+                if( $(this).css('display').match(/block$/) ) {
+                    var checkboxWidth = $(this).outerWidth();
+                        checkboxWidth = checkboxWidth ? checkboxWidth : 15;
+
+                    $(this).closest('label').css(
+                        'padding-left',
+                        (parseInt( $(this).closest('label').css('padding-left') ) * 2) + checkboxWidth
+                    );
+
+                    $(this).closest('.ms-reflow').removeClass('ms-reflow');
+                }
+            });
+
+            // update placeholder text
+            instance._updatePlaceholderText();
+
+            // RESET COLUMN STYLES
+            optionsWrap.find('ul').css({
+                'column-count'        : '',
+                'column-gap'          : '',
+                '-webkit-column-count': '',
+                '-webkit-column-gap'  : '',
+                '-moz-column-count'   : '',
+                '-moz-column-gap'     : ''
+            });
+
+            // COLUMNIZE
+            if( select.find('optgroup').length ) {
+                // float non grouped options
+                optionsList.find('> li:not(.optgroup)').css({
+                    'float': 'left',
+                    width: (100 / instance.options.columns) +'%'
+                });
+
+                // add CSS3 column styles
+                optionsList.find('li.optgroup').css({
+                    clear: 'both'
+                }).find('> ul').css({
+                    'column-count'        : instance.options.columns,
+                    'column-gap'          : 0,
+                    '-webkit-column-count': instance.options.columns,
+                    '-webkit-column-gap'  : 0,
+                    '-moz-column-count'   : instance.options.columns,
+                    '-moz-column-gap'     : 0
+                });
+
+                // for crappy IE versions float grouped options
+                if( this._ieVersion() && (this._ieVersion() < 10) ) {
+                    optionsList.find('li.optgroup > ul > li').css({
+                        'float': 'left',
+                        width: (100 / instance.options.columns) +'%'
+                    });
+                }
+            }
+            else {
+                // add CSS3 column styles
+                optionsList.css({
+                    'column-count'        : instance.options.columns,
+                    'column-gap'          : 0,
+                    '-webkit-column-count': instance.options.columns,
+                    '-webkit-column-gap'  : 0,
+                    '-moz-column-count'   : instance.options.columns,
+                    '-moz-column-gap'     : 0
+                });
+
+                // for crappy IE versions float grouped options
+                if( this._ieVersion() && (this._ieVersion() < 10) ) {
+                    optionsList.find('> li').css({
+                        'float': 'left',
+                        width: (100 / instance.options.columns) +'%'
+                    });
+                }
+            }
+        },
+
+        /* RESET THE DOM */
+        unload: function() {
+            $(this.element).next('.ms-options-wrap').remove();
+            $(this.element).show(function(){
+                $(this).css('display','').removeClass('jqmsLoaded');
+            });
+        },
+
+        /* RELOAD JQ MULTISELECT LIST */
+        reload: function() {
+            // remove existing options
+            $(this.element).next('.ms-options-wrap').remove();
+            $(this.element).removeClass('jqmsLoaded');
+
+            // load element
+            this.load();
+        },
+
+        /** PRIVATE FUNCTIONS **/
+        // update selected placeholder text
+        _updatePlaceholderText: function(){
+            var instance    = this;
+            var placeholder = $(instance.element).next('.ms-options-wrap').find('> button:first-child');
+            var optionsWrap = $(instance.element).next('.ms-options-wrap').find('> .ms-options');
+            var select      = optionsWrap.parent().prev();
+
+            // get selected options
+            var selOpts = [];
+            select.find('option:selected').each(function(){
+                selOpts.push( $(this).text() );
+            });
+
+            // UPDATE PLACEHOLDER TEXT WITH OPTIONS SELECTED
+            placeholder.text( selOpts.join( ', ' ) );
+            var copy = placeholder.clone().css({
+                display   : 'inline',
+                width     : 'auto',
+                visibility: 'hidden'
+            }).appendTo( optionsWrap.parent() );
+
+            // if the jquery.actual plugin is loaded use it to get the widths
+            var copyWidth  = (typeof $.fn.actual !== 'undefined') ? copy.actual( 'width', instance.options.jqActualOpts ) : copy.width();
+            var placeWidth = (typeof $.fn.actual !== 'undefined') ? placeholder.actual( 'width', instance.options.jqActualOpts ) : placeholder.width();
+
+            // if copy is larger than button width use "# selected"
+            if( copyWidth > placeWidth ) {
+                placeholder.text( selOpts.length + instance.options.texts.selectedOptions );
+            }
+            // if options selected then use those
+            else if( selOpts.length ) {
+                // trim each element in case of extra spaces
+                placeholder.text(
+                    selOpts.map(function( element ){
+                        return element.trim();
+                    }).join(', ')
+                );
+            }
+            // replace placeholder text
+            else {
+                placeholder.text( instance.options.texts.placeholder );
+            }
+
+            // remove dummy element
+            copy.remove();
+        },
+
+        // Add option to the custom dom list
+        _addOption: function( container, option ) {
+            container.text( option.name );
+
+            var thisCheckbox = $('<input type="checkbox" value="" title="" />')
+                .val( option.value )
+                .attr( 'title', option.name )
+                .attr( 'id', 'ms-opt-'+ msCounter );
+
+            // add user defined attributes
+            if( option.hasOwnProperty('attributes') && Object.keys( option.attributes ).length ) {
+                thisCheckbox.attr( option.attributes );
+            }
+
+            container.prepend( thisCheckbox );
+
+            if( option.checked ) {
+                container.addClass('default');
+                container.addClass('selected');
+                container.find( 'input[type="checkbox"]' ).prop( 'checked', true );
+            }
+
+            var label = $('<label></label>').attr( 'for', 'ms-opt-'+ msCounter );
+            container.wrapInner( label );
+
+            msCounter = msCounter + 1;
+        },
+
+        // check ie version
+        _ieVersion: function() {
+            var myNav = navigator.userAgent.toLowerCase();
+            return (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
+        }
+    };
+
+    // ENABLE JQUERY PLUGIN FUNCTION
+    $.fn.multiselect = function( options ){
+        var args = arguments;
+        var ret;
+
+        // menuize each list
+        if( (options === undefined) || (typeof options === 'object') ) {
+            return this.each(function(){
+                if( !$.data( this, 'plugin_multiselect' ) ) {
+                    $.data( this, 'plugin_multiselect', new MultiSelect( this, options ) );
+                }
+            });
+        } else if( (typeof options === 'string') && (options[0] !== '_') && (options !== 'init') ) {
+            this.each(function(){
+                var instance = $.data( this, 'plugin_multiselect' );
+
+                if( instance instanceof MultiSelect && typeof instance[ options ] === 'function' ) {
+                    ret = instance[ options ].apply( instance, Array.prototype.slice.call( args, 1 ) );
+                }
+
+                // special destruct handler
+                if( options === 'unload' ) {
+                    $.data( this, 'plugin_multiselect', null );
+                }
+            });
+
+            return ret;
+        }
+    };
+}(jQuery));

@@ -33,11 +33,15 @@
       "flot-tooltip",
       "datatables",
       "angular-datatables",
-      "angular-datatables.bootstrap"
+      "angular-datatables.bootstrap",
+      "bootstrap-add-clear",
+      "paramQuery-select",
+      "jQuery-MultiSelect"
 
     ],
     "vendor.ui": [
       "select2",
+      "bootstrap-add-clear",
       "summernote",
       "markdown",
       "he",
@@ -68,7 +72,8 @@
       "datatables-bootstrap",
       "datatables-tools",
       "datatables-colvis",
-      "datatables-responsive"
+      "datatables-responsive",
+      "bootstrap-add-clear"
 
     ],
     "vendor.graphs": [
@@ -102,6 +107,9 @@
     "fastclick": "bower_components/fastclick/lib/fastclick.js",
     "jquery-color": "bower_components/jquery-color/jquery.color.js",
     "select2": "bower_components/select2/select2.min.js",
+    "bootstrap-add-clear": "bower_components/bootstrap-add-clear/bootstrap-add-clear.min.js",
+    "paramQuery-select": "bower_components/paramQuery-select/pqselect.min.js",
+    "jQuery-MultiSelect": "bower_components/jQuery-MultiSelect/jquery.multiselect.js",
     "summernote": "bower_components/summernote/dist/summernote.min.js",
     "he": "bower_components/he/he.js",
     "to-markdown": "bower_components/to-markdown/dist/to-markdown.js",

@@ -1,0 +1,128 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+ .dataTables_filter .input-group-addon {
+    width: 32px;
+    margin-top: 0;
+    float: left;
+    height: 32px;
+    padding-top: 8px;
+    display: inline-block;
+    z-index: 2;
+    position: relative;
+    top: 32px;
+}
+
+.add-clear-span > input.form-control {
+    text-indent: 0px;
+    height: 30px;
+}
+
+span.add-clear-x.form-control-feedback.glyphicon.glyphicon-remove-circle {
+    display: inline-block;
+    z-index: 3;
+}
+
+.input-group-btn {
+    left: -2px;
+}
+
+.firstbtn {
+    text-align: center;
+}
+
+.secondbtn {
+    text-align: center;
+}
+
+.thirdbtn {
+    text-align: center;
+}
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid black;
+}
+
+.filter-row {
+    margin-top: 20px;
+}
+
+.ui-widget-header {
+    border: none;
+    background-color: gray;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+span.pq-select-item-text {
+    padding: 5px;
+}
+ 
+div.pq-select-button {
+    display: inline-block;
+    min-height: 30px;
+    min-width: 50px;
+    line-height: 30px;
+    text-align: left;
+    padding: 1px 3px 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    height: 30px;
+    text-indent: 5px;
+}
+
+div.pq-select-button {
+    display: inline-block;
+    min-height: 30px;
+    min-width: 50px;
+    line-height: 30px;
+    text-align: left;
+    padding: 1px 3px 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    height: 30px;
+    text-indent: 5px;
+}
+
+ul#mslist {
+    margin-top: -10px;
+}
+
+.ms-options-wrap > .ms-options .ms-selectall {
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.checkbox, .radio {
+    margin-top: 8px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+.col-adjust {
+    text-align: center;
+}

@@ -60,7 +60,9 @@
     "angular-google-maps": "~2.3.1",
     "angular-datatables": "^0.5.3",
     "bootstrap-add-clear": "^1.0.6",
-    "bootstrap-multiselect": "davidstutz/bootstrap-multiselect#^0.9.13"
+    "bootstrap-multiselect": "davidstutz/bootstrap-multiselect#^0.9.13",
+    "ParamQuery-Select": "paramquery/select#^1.3.2",
+    "jQuery-MultiSelect": "nobleclem/jQuery-MultiSelect"
   },
   "devDependencies": {
     "mjolnic-bootstrap-colorpicker": "bootstrap-colorpicker#^2.3.3"
