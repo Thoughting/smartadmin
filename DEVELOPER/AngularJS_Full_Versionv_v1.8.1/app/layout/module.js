@@ -15,7 +15,7 @@ angular.module('app.layout', ['ui.router'])
                 }
             }
         });
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/search');
 
 })
 
